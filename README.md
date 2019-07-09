@@ -1,0 +1,2 @@
+# miNationalrot
+Die Nationalratswahlen App
