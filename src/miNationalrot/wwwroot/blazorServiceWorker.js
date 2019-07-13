@@ -34,7 +34,7 @@ const filesToCache = [
     '_framework/wasm/mono.wasm',
     '_framework/blazor.boot.json',
     '_framework/blazor.webassembly.js',
- 
+     
     // App specific requirements
     '_framework/_bin/miNationalrot.dll',
     //'/_framework/_bin/osisa.Smart.Webapp.pdb',
