@@ -1,3 +1,8 @@
+stages:
+- stage: Build    
+  jobs:
+ - job: Build Job
+ displayName: Build Job
 pool:
   name: Hosted Windows 2019 with VS2019
 #Your build pipeline references an undefined variable named ‘Parameters.RestoreBuildProjects’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
@@ -38,3 +43,29 @@ steps:
   displayName: 'Publish Artifact'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
+
+- stage: Dev
+  displayName: Dev stage
+  dependsOn: Build
+  condition: succeeded('Build')
+  jobs:
+- deployment: Dev
+  displayName: Dev
+  environment: 'development'
+  pool:
+     name: Hosted Windows 2019 with VS2019
+  strategy:
+    runOnce: 
+      deploy:
+        steps:
+          - task: DownloadPipelineArtifact@1
+            displayName: 'Download Pipeline Artifact'
+            inputs:
+              buildType: 'current'
+        #  - task: AzureWebApp@1
+        #    inputs:
+        #      azureSubscription: '$(subscription)'
+        #      appType: 'webApp'
+        #      package: '$(System.ArtifactsDirectory)/drop/$(webappname).zip'
+        #      customWebConfig: '-Handler iisnode -NodeStartFile index.js -appType node'
+        #      deploymentMethod: 'zipDeploy'
