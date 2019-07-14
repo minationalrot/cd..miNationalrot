@@ -8,6 +8,10 @@ pool:
 #Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
 
 steps:
+- task: DotNetCoreInstaller@0
+  inputs:
+    version: '3.0.100-preview6-012264'
+
 - task: DotNetCoreCLI@2
   displayName: Restore
   inputs:
