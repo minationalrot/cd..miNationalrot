@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 stages:
 - stage: Build    
   jobs:
@@ -119,4 +118,4 @@ steps:
   displayName: 'Publish Artifact'
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
->>>>>>> dcf635daa35e2e2269f82673a5ed32726b4da8bc
+
