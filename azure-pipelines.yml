@@ -1,8 +1,6 @@
 stages:
 - stage: Build    
-  jobs:
- - job: Build Job
- displayName: Build Job
+
 pool:
   name: Hosted Windows 2019 with VS2019
 #Your build pipeline references an undefined variable named ‘Parameters.RestoreBuildProjects’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab. See https://go.microsoft.com/fwlink/?linkid=865972
