@@ -59,7 +59,7 @@ stages:
      steps:
 
       - task: DownloadBuildArtifacts@0
-        displayName: Download Build Artifacts to $(System.ArtifactsDirectory)
+        displayName: Download Build Artifacts to '$(System.ArtifactsDirectory)'
         inputs:
           artifactName: 'drop'
           downloadPath: '$(System.ArtifactsDirectory)' 
@@ -67,6 +67,7 @@ stages:
       - task: ExtractFiles@1
         displayName: 'Extract files'
         inputs:
+          archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
           destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
 
       # - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
