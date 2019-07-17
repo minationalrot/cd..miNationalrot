@@ -67,7 +67,7 @@ stages:
       - task: ExtractFiles@1
         displayName: 'Extract files'
         inputs:
-          destinationFolder: '\disttmp'
+          destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
 
       # - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
       #   displayName: 'Publishes to GitHub Pages'
