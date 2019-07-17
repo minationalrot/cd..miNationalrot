@@ -47,4 +47,26 @@ stages:
       displayName: 'Publish Artifact'
       inputs:
         PathtoPublish: '$(build.artifactstagingdirectory)'
- 
+
+- stage: Deploy
+  jobs:
+   - job: Deploy
+     steps:
+
+      - task: DownloadBuildArtifacts@0
+        displayName: Download Build Artifacts
+        inputs:
+          artifactName: '$(build.artifactstagingdirectory)'
+
+      # - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
+      #   displayName: 'Publishes to GitHub Pages'
+      #   inputs:
+      #     docPath: '$(System.DefaultWorkingDirectory)/docs'
+      #     githubusername: miNationalrot
+      #     githubemail: 'remo.oser@osisa.com'
+      #     githubaccesstoken: 25b8d6180428e6d7c052399d5ceb08cfdab3cbb5
+      #     repositoryname: miNationalrot
+      #     branchname: master
+      
+      # - task: ArchiveFiles@2
+      #   displayName: 'Archive $(Build.BinariesDirectory)'
