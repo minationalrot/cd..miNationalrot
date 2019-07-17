@@ -48,7 +48,7 @@ stages:
       displayName: 'Publish Artifact'
       inputs:
         PathtoPublish: '$(build.artifactstagingdirectory)'
-        artifactName: 'drop' 
+        artifactName: 'drop2' 
 
 - stage: Deploy
   jobs:
@@ -61,7 +61,7 @@ stages:
       - task: DownloadBuildArtifacts@0
         displayName: Download Build Artifacts to '$(System.ArtifactsDirectory)'
         inputs:
-          artifactName: 'drop'
+          artifactName: 'drop2'
           downloadPath: '$(System.ArtifactsDirectory)' 
 
       - task: ExtractFiles@1
