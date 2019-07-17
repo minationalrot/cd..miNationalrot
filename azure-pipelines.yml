@@ -70,12 +70,12 @@ stages:
           archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
           destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
 
-      - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
-        displayName: 'Publishes to GitHub Pages'
-        inputs:
-          docPath: '$(build.artifactstagingdirectory)\disttmp'
-          githubusername: miNationalrot
-          githubemail: 'remo.oser@osisa.com'
-          githubaccesstoken: 25b8d6180428e6d7c052399d5ceb08cfdab3cbb5
-          repositoryname: miNationalrot
-          branchname: master
+      # - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
+      #   displayName: 'Publishes to GitHub Pages'
+      #   inputs:
+      #     docPath: '$(build.artifactstagingdirectory)\disttmp'
+      #     githubusername: miNationalrot
+      #     githubemail: 'remo.oser@osisa.com'
+      #     githubaccesstoken: 25b8d6180428e6d7c052399d5ceb08cfdab3cbb5
+      #     repositoryname: miNationalrot
+      #     branchname: master
