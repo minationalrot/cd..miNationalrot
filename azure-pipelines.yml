@@ -53,12 +53,21 @@ stages:
 - stage: Deploy
   jobs:
    - job: Deploy
+     pool:
+      name: Hosted Windows 2019 with VS2019
+
      steps:
 
       - task: DownloadBuildArtifacts@0
-        displayName: Download Build Artifacts
+        displayName: Download Build Artifacts to $(System.ArtifactsDirectory)
         inputs:
-          artifactName: 'drop' 
+          artifactName: 'drop'
+          downloadPath: '$(System.ArtifactsDirectory)' 
+
+      - task: ExtractFiles@1
+        displayName: 'Extract files'
+        inputs:
+          destinationFolder: '\disttmp'
 
       # - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
       #   displayName: 'Publishes to GitHub Pages'
