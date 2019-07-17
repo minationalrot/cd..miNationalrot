@@ -8,8 +8,8 @@ stages:
   jobs:
   - job: Build
     pool:
-      #name: Hosted Windows 2019 with VS2019
-      name: Default
+      name: Hosted Windows 2019 with VS2019
+      #name: Default
 
     steps:
    
