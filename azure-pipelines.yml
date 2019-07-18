@@ -84,7 +84,7 @@ stages:
           rem git config credential.https://github.com/minationalrot/miNationalrot.RemoOser \RemoOser
           git config user.email remo.oser@osisa.com
           git config user.name RemoOser
-          git remote add origin https://miNationalrot:b05095333ffd54b99c03390cca83b9796b600e03@github.com/minationalrot/miNationalrot.git
+          git remote add origin https://RemoOser:b05095333ffd54b99c03390cca83b9796b600e03@github.com/minationalrot/miNationalrot.git
           echo git push...
           git push --force origin master:gh-pages
         displayName: deploy to gh-pages
