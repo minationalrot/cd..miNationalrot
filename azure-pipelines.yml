@@ -71,12 +71,14 @@ stages:
           archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
           destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
 
-      - script: cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-      - script: git init
-      - script: git add .
-      - script: git commit -m "Push force azure-deploy ***NO_CI***"
-      - script: git remote add origin https://github.com/minationalrot/miNationalrot.git
-      - script: git push --force origin master:gh-pages
+      - script: |
+          cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+          git init
+          git add .
+          git commit -m "Push force azure-deploy ***NO_CI***"
+          git remote add origin https://github.com/minationalrot/miNationalrot.git
+          git push --force origin master:gh-pages
+        displayName: deploy to gh-pages
 
       # - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
       #   displayName: 'Publishes to GitHub Pages'
