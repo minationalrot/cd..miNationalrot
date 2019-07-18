@@ -81,7 +81,9 @@ stages:
           echo git commit...
           git commit -m "Push force azure-deploy ***NO_CI***"
           echo git remote add...
-          git remote add origin https://github.com/minationalrot/miNationalrot.git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)"
+          echo GAT '$(System.AccessToken)'
+          git \credential.https://github.com/minationalrot/miNationalrot.RemoOser \RemoOser
+          git remote add origin https://github.com/minationalrot/miNationalrot.git
           echo git push...
           git push --force origin master:gh-pages
         displayName: deploy to gh-pages
