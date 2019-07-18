@@ -73,8 +73,6 @@ stages:
 
       - script: |
           cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-          git config user.email remo.oser@osisa.com
-          git config user.name RemoOser
           echo git init...
           git init
           echo git add...
@@ -84,6 +82,8 @@ stages:
           echo git remote add...
           echo GAT '$(System.AccessToken)'
           rem git config credential.https://github.com/minationalrot/miNationalrot.RemoOser \RemoOser
+          git config user.email remo.oser@osisa.com
+          git config user.name RemoOser
           git remote add origin https://github.com/minationalrot/miNationalrot.git
           echo git push...
           git push --force origin master:gh-pages
