@@ -96,8 +96,8 @@ stages:
           docPath: '$(build.artifactstagingdirectory)\disttmp\minationalrot\dist\*'
           branchname: 'gh-pages'
           commitmessage: 'Automated Release $(Release.ReleaseId) ***NO_CI***'
-          githubusername: miNationalrot
-          githubemail: 'remo.oser@osisa.com'
+          githubusername: miNationalrot@dev.azure.com
+          githubemail: remo.oser@osisa.com
           githubaccesstoken: 5171ab8bd3135ed3b04f6d54d2c902abaf639f28
           repositoryname: miNationalrot
 
