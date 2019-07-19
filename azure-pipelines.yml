@@ -48,7 +48,7 @@ stages:
       displayName: 'Publish Artifact'
       inputs:
         PathtoPublish: '$(build.artifactstagingdirectory)'
-        artifactName: 'drop2' 
+        artifactName: 'drop' 
 
 - stage: Deploy
   jobs:
@@ -62,7 +62,7 @@ stages:
       - task: DownloadBuildArtifacts@0
         displayName: Download Build Artifacts to '$(System.ArtifactsDirectory)'
         inputs:
-          artifactName: 'drop2'
+          artifactName: 'drop'
           downloadPath: '$(System.ArtifactsDirectory)' 
 
       - task: ExtractFiles@1
@@ -84,7 +84,9 @@ stages:
           rem git config credential.https://github.com/minationalrot/miNationalrot.RemoOser \RemoOser
           git config user.email remo.oser@osisa.com
           git config user.name RemoOser
-          git remote add origin https://RemoOser:b05095333ffd54b99c03390cca83b9796b600e03@github.com/minationalrot/miNationalrot.git
+          rem https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
+          git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
+          rem git remote add origin https://RemoOser:b05095333ffd54b99c03390cca83b9796b600e03@github.com/minationalrot/miNationalrot.git
           echo git push...
           git push --force origin master:gh-pages
         displayName: deploy to gh-pages
