@@ -2,6 +2,7 @@
 variables:
   Parameters.RestoreBuildProjects: miNationalrot.sln
   BuildConfiguration: Release
+  Git_PAT: $(System.AccessToken)
 
 stages:
 - stage: Build    
@@ -71,35 +72,35 @@ stages:
           archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
           destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
 
-      # - script: |
-      #     cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-      #     echo git init...
-      #     git init
-      #     echo git add...
-      #     git add .
-      #     echo git commit...
-      #     git commit -m "Push force azure-deploy ***NO_CI***"
-      #     echo git remote add...
-      #     echo GAT '$(System.AccessToken)'
-      #     rem git config credential.https://github.com/minationalrot/miNationalrot.RemoOser \RemoOser
-      #     git config user.email remo.oser@osisa.com
-      #     git config user.name RemoOser
-      #     rem https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
-      #     rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
-      #     git remote add origin https://RemoOser:$(System.AccessToken)@github.com/minationalrot/miNationalrot.git
-      #     echo git push...
-      #     git push --force origin master:gh-pages
-      #   displayName: deploy to gh-pages
+      - script: |
+          cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+          echo git init...
+          git init
+          echo git add...
+          git add .
+          echo git commit...
+          git commit -m "Push force azure-deploy ***NO_CI***"
+          echo git remote add...
+          echo GAT '$(System.AccessToken)'
+          rem git config credential.https://github.com/minationalrot/miNationalrot.RemoOser \RemoOser
+          git config user.email remo.oser@osisa.com
+          git config user.name RemoOser
+          rem https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
+          rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
+          git remote add origin https://RemoOser:25b8d6180428e6d7c052399d5ceb08cfdab3cbb5@github.com/minationalrot/miNationalrot.git
+          echo git push...
+          git push --force origin master:gh-pages
+        displayName: deploy to gh-pages
 
-      - task: GitHubPagesPublish@1
-        inputs:
-          docPath: '$(build.artifactstagingdirectory)\disttmp\minationalrot\dist\*'
-          branchname: 'gh-pages'
-          commitmessage: 'Automated Release $(Release.ReleaseId) ***NO_CI***'
-          githubusername: RemoOser
-          githubemail: remo.oser@osisa.com
-          githubaccesstoken: 5171ab8bd3135ed3b04f6d54d2c902abaf639f28
-          repositoryname: miNationalrot
+      # - task: GitHubPagesPublish@1
+      #   inputs:
+      #     docPath: '$(build.artifactstagingdirectory)\disttmp\minationalrot\dist\*'
+      #     branchname: 'gh-pages'
+      #     commitmessage: 'Automated Release $(Release.ReleaseId) ***NO_CI***'
+      #     githubusername: RemoOser
+      #     githubemail: remo.oser@osisa.com
+      #     githubaccesstoken: 5171ab8bd3135ed3b04f6d54d2c902abaf639f28
+      #     repositoryname: miNationalrot
 
       # - task: AccidentalFish.githubpages-publish.AccidentalFish.GitHubPages-Publish.GitHubPagesPublish@1
       #   displayName: 'Publishes to GitHub Pages'
