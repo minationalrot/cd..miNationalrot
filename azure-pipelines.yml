@@ -76,6 +76,7 @@ stages:
       - script: |
           git checkout gh-pages
           git update-ref HEAD gh-pages
+          git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           git rm . -r
           rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
@@ -96,6 +97,8 @@ stages:
           rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           rem git remote add origin https://RemoOser:25b8d6180428e6d7c052399d5ceb08cfdab3cbb5@github.com/minationalrot/miNationalrot.git
           rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
+          rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
+          rem git push -u origin --all
           rem echo git push...
           rem git push --force origin master:gh-pages
           git push --force origin gh-pages
