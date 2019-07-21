@@ -75,6 +75,7 @@ stages:
 
       - script: |
           git checkout gh-pages
+          git update-ref HEAD gh-pages
           git rm . -r
           rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
