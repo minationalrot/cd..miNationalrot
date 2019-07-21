@@ -70,26 +70,27 @@ stages:
         displayName: 'Extract files'
         inputs:
           archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
-          destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
+          #destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
+          destinationFolder: $(Build.ArtifactStagingDirectory)
 
       - script: |
-          cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-          echo git init...
-          git init
-          echo git add...
+          rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+          rem echo git init...
+          rem git init
+          rem echo git add...
           git add .
           echo git commit...
           git commit -m "Push force azure-deploy ***NO_CI***"
           echo git remote add...
           echo GAT '$(System.AccessToken)'
           rem git config credential.https://github.com/minationalrot/miNationalrot.RemoOser \RemoOser
-          git config user.email remo.oser@osisa.com
-          git config user.name RemoOser
+          rem git config user.email remo.oser@osisa.com
+          rem git config user.name RemoOser
           rem https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           rem git remote add origin https://RemoOser:25b8d6180428e6d7c052399d5ceb08cfdab3cbb5@github.com/minationalrot/miNationalrot.git
-          git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
-          echo git push...
+          rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
+          rem echo git push...
           git push --force origin master:gh-pages
         displayName: deploy to gh-pages
 
