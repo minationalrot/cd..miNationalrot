@@ -71,7 +71,7 @@ stages:
         inputs:
           archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
           #destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
-          destinationFolder: $(Build.ArtifactStagingDirectory)
+          destinationFolder: $(System.DefaultWorkingDirectory)
 
       - script: |
           rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
