@@ -70,11 +70,12 @@ stages:
         displayName: 'Extract files'
         inputs:
           archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
-          #destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
-          destinationFolder: $(System.DefaultWorkingDirectory)
+          destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
+          #destinationFolder: $(System.DefaultWorkingDirectory)
 
       - script: |
           rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+          xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)
           rem echo git init...
           rem git init
           rem echo git add...
