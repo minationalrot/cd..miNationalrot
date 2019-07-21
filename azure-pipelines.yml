@@ -75,10 +75,11 @@ stages:
 
       - script: |
           git checkout gh-pages
+          git rm .
           rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-          xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\dist\ /s
+          xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
 
-          cd $(System.DefaultWorkingDirectory)\dist
+          rem cd $(System.DefaultWorkingDirectory)\dist
           rem echo git init...
           rem git init
           rem echo git add...
