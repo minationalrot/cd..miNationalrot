@@ -74,8 +74,10 @@ stages:
           #destinationFolder: $(System.DefaultWorkingDirectory)
 
       - script: |
+          git checkout gh-pages
           rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\dist\ /s
+
           cd $(System.DefaultWorkingDirectory)\dist
           rem echo git init...
           rem git init
