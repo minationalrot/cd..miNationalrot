@@ -98,7 +98,7 @@ stages:
           rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           rem echo git push...
           rem git push --force origin master:gh-pages
-          git push --force origin
+          git push --force origin gh-pages
         displayName: deploy to gh-pages
 
       # - task: GitHubPagesPublish@1
