@@ -75,7 +75,7 @@ stages:
 
       - script: |
           rem cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-          xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\dist
+          xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\dist\ /s
           cd $(System.DefaultWorkingDirectory)\dist
           rem echo git init...
           rem git init
