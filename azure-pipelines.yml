@@ -73,6 +73,10 @@ stages:
           destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
           #destinationFolder: $(System.DefaultWorkingDirectory)
 
+      
+      - checkout: self
+        persistCredentials: 'true'
+
       - script: |
           git checkout gh-pages
           git update-ref HEAD gh-pages
