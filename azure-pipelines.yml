@@ -87,7 +87,8 @@ stages:
           git config user.name RemoOser
           rem https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
-          git remote add origin https://RemoOser:25b8d6180428e6d7c052399d5ceb08cfdab3cbb5@github.com/minationalrot/miNationalrot.git
+          rem git remote add origin https://RemoOser:25b8d6180428e6d7c052399d5ceb08cfdab3cbb5@github.com/minationalrot/miNationalrot.git
+          git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           echo git push...
           git push --force origin master:gh-pages
         displayName: deploy to gh-pages
