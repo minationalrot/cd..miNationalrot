@@ -1,8 +1,8 @@
 name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 variables:
-  Parameters.RestoreBuildProjects: miNationalrot.sln
+  SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
-  Version: 0.2.1.$(System.BuildNumber)
+  VersionPrefix: '0.2.1.'
 
 stages:
 - stage: Build    
@@ -28,8 +28,8 @@ stages:
     - task: DotNetCoreCLI@2
       displayName: Build
       inputs:
-        projects: '$(Parameters.RestoreBuildProjects)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(Version)'
+        projects: '$(SolutionFile)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix)$(System.BuildNumber)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
