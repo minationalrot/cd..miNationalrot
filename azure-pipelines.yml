@@ -23,7 +23,7 @@ stages:
       displayName: Restore
       inputs:
         command: restore
-        projects: '$(Parameters.RestoreBuildProjects)'
+        projects: '$(SolutionFile)'
 
     - task: DotNetCoreCLI@2
       displayName: Build
