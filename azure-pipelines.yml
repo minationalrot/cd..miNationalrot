@@ -24,7 +24,7 @@ stages:
     - task: DotNetCoreCLI@2
       displayName: Restore
       inputs:
-        command: restore2
+        command: restore23
         projects: '$(SolutionFile)'
 
     - task: DotNetCoreCLI@2
