@@ -5,7 +5,7 @@ variables:
   VersionPrefix: '0.1'
   B2:  $[variables['major']]
   BuildNumber: $[format('{0:yyyyMMdd}', pipeline.startTime)]
-  Revision:  $(Rev:.r)
+  Revision:  $[format('{0}', $(Rev:.r)]
 
 stages:
 - stage: Build    
@@ -17,9 +17,7 @@ stages:
 
     steps:
     - script: |
-        echo $(BuildNumber)
-        echo $(B2)
-        echo $(Rev:.r)
+        echo $(BuildNumber) $(B2) $(Rev:.r)
 
     - script: |
         
