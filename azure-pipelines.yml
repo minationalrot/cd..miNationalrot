@@ -15,7 +15,11 @@ stages:
       name: Default
 
     steps:
-    - script: echo $(build.)
+    - script: |
+        echo $(BuildNumber)
+
+    - script: |
+         echo $(B2)
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
       inputs:
@@ -24,7 +28,7 @@ stages:
     - task: DotNetCoreCLI@2
       displayName: Restore
       inputs:
-        command: restore232
+        command: restore
         projects: '$(SolutionFile)'
 
     - task: DotNetCoreCLI@2
