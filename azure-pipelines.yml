@@ -3,6 +3,7 @@ variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
   VersionPrefix: '0.1.1'
+  BuildNumber: ${{$(Date:yyyyMMdd)$(Rev:.r)}}
 
 stages:
 - stage: Build    
@@ -28,7 +29,7 @@ stages:
       displayName: Build
       inputs:
         projects: '$(SolutionFile)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(Date:yyyyMMdd)$(Rev:.r)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildNumber)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
