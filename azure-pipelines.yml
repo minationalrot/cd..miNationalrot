@@ -2,7 +2,7 @@ name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)
 variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
-  VersionPrefix: '0.2.1.'
+  VersionPrefix: '0.2.1'
 
 stages:
 - stage: Build    
@@ -28,7 +28,7 @@ stages:
       displayName: Build
       inputs:
         projects: '$(SolutionFile)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix)$(System.BuildNumber)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(System.BuildNumber)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
