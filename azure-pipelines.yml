@@ -3,7 +3,7 @@ variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
   VersionPrefix: '0.1.1'
-  BuildNumber: $(System.BuildNumber)
+  BuildNumber: '$(System.BuildNumber)'
 
 stages:
 - stage: Build    
