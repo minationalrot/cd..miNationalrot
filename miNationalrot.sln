@@ -6,6 +6,15 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "miNationalrot", "src\miNationalrot\miNationalrot.csproj", "{0F31843F-A90E-46E8-BF52-6B2687067F47}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SiteItems", "SiteItems", "{2EB44F3F-0795-4A1E-A0AD-BF89F6B58FDF}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		pub.bat = pub.bat
+		README.md = README.md
+		SolutionInfo.cs = SolutionInfo.cs
+		Test.Build.props = Test.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
