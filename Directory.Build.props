@@ -3,10 +3,7 @@
 <Project>
  
   <PropertyGroup>
-    <!--<SolutionOutputPath>$(SolutionDir)..\bin</SolutionOutputPath>-->
     <SolutionOutputPath>$(MSBuildThisFileDirectory)bin</SolutionOutputPath>
-    <!--<BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)Build\$(ProjectName)\obj</BaseIntermediateOutputPath>-->
-  
     <InformationalVersion>This is a open source project.</InformationalVersion>
   </PropertyGroup> 
 

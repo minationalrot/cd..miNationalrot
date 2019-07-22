@@ -13,7 +13,6 @@ stages:
       name: Default
 
     steps:
-   
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
       inputs:
