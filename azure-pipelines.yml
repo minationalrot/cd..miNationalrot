@@ -1,8 +1,8 @@
-
+name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 variables:
   Parameters.RestoreBuildProjects: miNationalrot.sln
   BuildConfiguration: Release
-  Version: '0.2.1.$(System.Buildnumber)'
+  Version: 0.2.1.$(System.BuildNumber)
 
 stages:
 - stage: Build    
