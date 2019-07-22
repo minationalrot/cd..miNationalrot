@@ -3,7 +3,8 @@ variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
   VersionPrefix: '0.1.1'
-  BuildNumber: {{$(Date:yyyyMMdd)$(Rev:.r)}}
+  B2:  $[variables['major']]
+  BuildNumber: $[format('{0:yyyyMMdd}', pipeline.startTime)]
 
 stages:
 - stage: Build    
@@ -14,6 +15,7 @@ stages:
       name: Default
 
     steps:
+    - script: echo $(build.)
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
       inputs:
