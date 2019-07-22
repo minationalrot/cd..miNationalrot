@@ -2,7 +2,7 @@ name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)
 variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
-  VersionPrefix: '0.2.1'
+  VersionPrefix: '0.1.1'
 
 stages:
 - stage: Build    
