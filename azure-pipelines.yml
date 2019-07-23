@@ -35,7 +35,8 @@ stages:
       displayName: Build
       inputs:
         projects: '$(SolutionFile)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Revision)'
+        #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Revision)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=1.1.190723.3'
 
     - task: DotNetCoreCLI@2
       displayName: Test
