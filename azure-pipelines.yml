@@ -3,11 +3,9 @@ variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
   VersionPrefix: '0.1'
-  B2:  $[format('{0}', variables['Rev'])]
   BuildDate: $[format('{0:yyMMdd}', pipeline.startTime)]
   Revision: 0
-  BuildNumber2: $(Build.BuildNumber)
-    
+      
 stages:
 - stage: Build    
   jobs:
@@ -17,13 +15,10 @@ stages:
       name: Default
 
     steps:
-    - script: |
-        echo $(Build.BuildNumber), $(B2), $(Rev:.r)
-
     - powershell: |
         $buildNumber3 = $Env:BUILD_BUILDNUMBER
-        $rev=$buildNumber3.Substring($buildNumber3.LastIndexOf('.') + 1)
-        Write-Host "##vso[task.setvariable variable=Revision;]$rev"
+        $revision=$buildNumber3.Substring($buildNumber3.LastIndexOf('.') + 1)
+        Write-Host "##vso[task.setvariable variable=Revision;]$revision"
         
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
@@ -40,7 +35,7 @@ stages:
       displayName: Build
       inputs:
         projects: '$(SolutionFile)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).-$(Revision)--$(BuildNumber2)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Revision)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
