@@ -21,7 +21,8 @@ stages:
         echo $(Build.BuildNumber), $(B2), $(Rev:.r)
 
     - powershell: |
-        $rev=$BuildNumber2.Substring($BuildNumber2.LastIndexOf('.') + 1)
+        $buildNumber3 = $Env:BUILD_BUILDNUMBER
+        $rev=$buildNumber3.Substring($buildNumber3.LastIndexOf('.') + 1)
         Write-Host "##vso[task.setvariable variable=Revision;]$rev"
         
     - task: UseDotNet@2
