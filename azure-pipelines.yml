@@ -18,7 +18,7 @@ stages:
 
     steps:
     - script: |
-        echo $(BuildNumber) $(B2) $(Rev:.r)
+        echo $(Build.BuildNumber) $(B2) $(Rev:.r)
 
     - script: |
         
