@@ -22,6 +22,7 @@ stages:
 
     - powershell: |
         $env:Revision= 2 #$BuildNumber2.Substring($BuildNumber2.LastIndexOf('.') + 1)
+        Write-Host "##vso[task.setvariable variable=Revision;]3"
         
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
