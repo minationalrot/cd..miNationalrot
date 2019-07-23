@@ -6,7 +6,7 @@ variables:
   B2:  $[format('{0}', variables['Rev'])]
   BuildDate: $[format('{0:yyMMdd}', pipeline.startTime)]
   Revision: 0
-  BuildNumber2: 0
+  BuildNumber2: $(Build.BuildNumber)
     
 stages:
 - stage: Build    
@@ -21,7 +21,7 @@ stages:
         echo $(Build.BuildNumber), $(B2), $(Rev:.r)
 
     - powershell: |
-        $Revision= $Build.BuildNumber.Substring($Build.BuildNumber.LastIndexOf('.') + 1)
+        $Revision= 2 #$BuildNumber2.Substring($BuildNumber2.LastIndexOf('.') + 1)
         
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
@@ -38,7 +38,7 @@ stages:
       displayName: Build
       inputs:
         projects: '$(SolutionFile)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Rev:.r)-$(Revision)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).-$(Revision)--$(BuildNumber2)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
