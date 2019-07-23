@@ -21,7 +21,7 @@ stages:
         echo $(Build.BuildNumber), $(B2), $(Rev:.r)
 
     - powershell: |
-        $Revision= 2 #$BuildNumber2.Substring($BuildNumber2.LastIndexOf('.') + 1)
+        $env:Revision= 2 #$BuildNumber2.Substring($BuildNumber2.LastIndexOf('.') + 1)
         
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
