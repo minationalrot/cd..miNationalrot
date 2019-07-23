@@ -17,8 +17,8 @@ stages:
 
     steps:
     - powershell: |
-        $buildNumber3 = $Env:BUILD_BUILDNUMBER
-        $revision=$buildNumber3.Substring($buildNumber3.LastIndexOf('.') + 1)
+        $buildNumber = $Env:BUILD_BUILDNUMBER
+        $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
         Write-Host "##vso[task.setvariable variable=Revision;]$revision"
         
     - task: UseDotNet@2
@@ -51,7 +51,7 @@ stages:
       inputs:
         command: publish
         publishWebProjects: True
-        arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+        arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory) --no-build'
 
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact'
