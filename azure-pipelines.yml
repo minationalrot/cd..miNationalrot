@@ -1,9 +1,10 @@
-name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyMMdd)$(Rev:.r)
+name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yy).$(Date:MMdd)$(Rev:.r)
 variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
-  VersionPrefix: '0.1'
-  BuildDate: $[format('{0:yyMMdd}', pipeline.startTime)]
+  VersionPrefix: '0'
+  BuildYear: $[format('{0:yy}', pipeline.startTime)]
+  BuildDate: $[format('{0:MMdd}', pipeline.startTime)]
   Revision: 0
       
 stages:
@@ -36,7 +37,7 @@ stages:
       inputs:
         projects: '$(SolutionFile)'
         #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Revision)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=1.1.1907.3'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildYear).$(BuildDate).$(Revision)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
