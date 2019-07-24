@@ -100,7 +100,7 @@ stages:
           git push origin gh-pages
         displayName: 'run git gh-pages'
         
-      - task: InvokeRESTAPI@1
+      - task: InvokeRESTAPI@2
         inputs:
           connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM
           serviceConnection: 'miNationalrot-dev-as - GitHub'# Required when connectionType == ConnectedServiceName
