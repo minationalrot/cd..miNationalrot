@@ -105,6 +105,6 @@ stages:
 
       - task: azuredevopsgithub@0
         inputs:
-            gitHubConnection: 'miNationalrot-dev-as - Azure'
+            gitHubConnection: 'miNationalrot-dev-as - GitHub'
             method: 'POST'
             githubrestapiurl: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
