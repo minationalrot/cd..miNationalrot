@@ -98,10 +98,22 @@ stages:
           git push --force origin gh-pages
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
+        displayName: 'run git gh-pages'
         
+      #- task: azuredevopsgithub@0
+      #  inputs:
+      #      gitHubConnection: 'miNationalrot-dev-as - GitHub'
+      #      method: 'POST'
+      #      githubrestapiurl: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
 
-      - task: azuredevopsgithub@0
+      - task: InvokeRESTAPI@1
         inputs:
-            gitHubConnection: 'miNationalrot-dev-as - GitHub'
-            method: 'POST'
-            githubrestapiurl: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
+          connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM
+          serviceConnection: 'miNationalrot-dev-as - GitHub'# Required when connectionType == ConnectedServiceName
+          #azureServiceConnection: # Required when connectionType == ConnectedServiceNameARM
+          method: 'POST' # Options: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, PATCH
+          headers: '{Accept:application/vnd.github.mister-fantastic-preview+json,  AuthToken: $(system.AccessToken)}' #, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
+          #body: # Required when method != GET && Method != HEAD
+          urlSuffix: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
+          waitForCompletion: 'true' # Options: true, false
+          #successCriteria: # Optional
