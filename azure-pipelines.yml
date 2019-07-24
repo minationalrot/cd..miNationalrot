@@ -96,10 +96,16 @@ stages:
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
           git add .
           echo git commit...
-          git commit -m "Push force azure-deploy ***NO_CI***"
+          git commit -m "Push force azure-deploy ***NO_CI*** $(Version)"
           echo git remote add...
           echo Version '$(Version)'
           git push --force origin gh-pages
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
-        displayName: deploy to gh-pages
+        displayName: deploy $(Version) to gh-pages
+
+    - task: jikuma.devops-github-extension.custom-build-release-task.azuredevopsgithub@0
+        displayName: 'Github POST rebuild gh-pages'
+        inputs:
+        gitHubConnection: 'miNationalrot-dev-as - GitHub'
+        githubrestapiurl: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
