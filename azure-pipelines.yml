@@ -100,5 +100,6 @@ stages:
           echo git remote add...
           echo Version '$(Version)'
           git push --force origin gh-pages
-          git push
+          git commit -m 'rebuild pages' --allow-empty
+          git push origin gh-pages
         displayName: deploy to gh-pages
