@@ -89,12 +89,9 @@ stages:
 
       - script: 
           git checkout gh-pages
-          rem git update-ref HEAD gh-pages
-          rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
           git add .
-          echo git commit...
           git commit -m "Push force azure-deploy ***NO_CI*** $(Version)"
           echo git remote add...
           echo Version '$(Version)'
