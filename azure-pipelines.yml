@@ -100,12 +100,6 @@ stages:
           git push origin gh-pages
         displayName: 'run git gh-pages'
         
-      #- task: azuredevopsgithub@0
-      #  inputs:
-      #      gitHubConnection: 'miNationalrot-dev-as - GitHub'
-      #      method: 'POST'
-      #      githubrestapiurl: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
-
       - task: InvokeRESTAPI@1
         inputs:
           connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM
