@@ -88,7 +88,7 @@ stages:
       - checkout: self
         persistCredentials: 'true'
 
-      - script: |
+      - script: 
           git checkout gh-pages
           rem git update-ref HEAD gh-pages
           rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
@@ -102,10 +102,10 @@ stages:
           git push --force origin gh-pages
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
-        displayName: deploy $(Version) to gh-pages
+        
 
-    - task: azuredevopsgithub@0
-      inputs:
-        gitHubConnection: 'miNationalrot-dev-as - GitHub'
-        method: 'POST'
-        githubrestapiurl: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
+      - task: azuredevopsgithub@0
+          inputs:
+            gitHubConnection: 'miNationalrot-dev-as - GitHub'
+            method: 'POST'
+            githubrestapiurl: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
