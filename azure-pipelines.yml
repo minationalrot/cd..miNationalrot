@@ -20,7 +20,7 @@ stages:
     - powershell: |
         $buildNumber = $Env:BUILD_BUILDNUMBER
         $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
-        $version=$(VersionPrefix).$(BuildYear).$(BuildDate).$(Revision)
+        $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
         Write-Host "##vso[task.setvariable variable=Revision;]$revision"
         Write-Host "##vso[task.setvariable variable=Version;]$version"
         
