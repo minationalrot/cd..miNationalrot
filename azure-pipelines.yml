@@ -103,7 +103,7 @@ stages:
       - powershell: |
           $logUrl="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $output = Invoke-RestMethod -Uri $logUrl -Method Post -Headers @{
-            'Authorization' = "Bearer $(system.AccessToken)";
+            'Authorization' = "Bearer a037f69b71935fde9e527e9a14054c6b055a8daf";
             'Accept' = "application/vnd.github.mister-fantastic-preview+json"
           }
           Write-Host $output
