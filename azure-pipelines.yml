@@ -104,7 +104,7 @@ stages:
           git push origin gh-pages
         displayName: deploy $(Version) to gh-pages
 
-    - task: jikuma.devops-github-extension.custom-build-release-task.azuredevopsgithub@0
+    - task: azuredevopsgithub@0
         displayName: 'Github POST rebuild gh-pages'
         inputs:
         gitHubConnection: 'miNationalrot-dev-as - GitHub'
