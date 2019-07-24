@@ -7,6 +7,7 @@ variables:
   BuildDate: $[format('{0:MMdd}', pipeline.startTime)]
   Revision: 0
   Version: '0.0.0.0'
+  Token: $(System.AccessToken)
       
 stages:
 - stage: Build    
@@ -18,7 +19,8 @@ stages:
 
     steps:
     - powershell: |
-        $buildNumber = $Env:BUILD_BUILDNUMBER
+       
+       
         $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
         $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
         Write-Host "##vso[task.setvariable variable=Revision;]$revision"
@@ -101,8 +103,10 @@ stages:
         displayName: 'run git gh-pages'
         
       - powershell: |
+          $token = $env:SYSTEM_ACCESSTOKEN
+          Write-Host $token
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
-          $headers = @{ "Authorization" = "Bearer df52cb58f7573a9c19dea5a4dc86d96aa58a5be5"; "Accept" = "application/vnd.github.mister-fantastic-preview+json" }
+          $headers = @{ "Authorization" = "Bearer " + $token; "Accept" = "application/vnd.github.mister-fantastic-preview+json" }
           $method="POST"
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -Verbose
           #$output = Invoke-RestMethod -Uri $logUrl -Method Post -Body $body -Headers @{
