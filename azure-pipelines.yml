@@ -87,7 +87,7 @@ stages:
       - checkout: self
         persistCredentials: 'true'
 
-      - script: 
+      - script: |
           git checkout gh-pages
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
