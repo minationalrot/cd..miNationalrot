@@ -100,14 +100,23 @@ stages:
           git push origin gh-pages
         displayName: 'run git gh-pages'
         
-      - task: InvokeRESTAPI@1
-        inputs:
-          connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM
-          serviceConnection: 'miNationalrot-dev-as - GitHub'# Required when connectionType == ConnectedServiceName
-          #azureServiceConnection: # Required when connectionType == ConnectedServiceNameARM
-          method: 'POST' # Options: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, PATCH
-          headers: '{Accept:application/vnd.github.mister-fantastic-preview+json,  AuthToken: $(system.AccessToken)}' #, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
-          #body: # Required when method != GET && Method != HEAD
-          urlSuffix: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
-          waitForCompletion: 'true' # Options: true, false
-          #successCriteria: # Optional
+      - powershell: |
+          $logUrl="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
+          $output = Invoke-RestMethod -Uri $logUrl -Method Post -Headers @{
+            'Authorization' = "Bearer $(system.AccessToken)";
+            'Accept' = "application/vnd.github.mister-fantastic-preview+json"
+          }
+          Write-Host $output
+
+
+      #- task: InvokeRESTAPI@1
+      #  inputs:
+      #    connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM
+      #    serviceConnection: 'miNationalrot-dev-as - GitHub'# Required when connectionType == ConnectedServiceName
+      #    #azureServiceConnection: # Required when connectionType == ConnectedServiceNameARM
+      #    method: 'POST' # Options: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, PATCH
+      #    headers: '{Accept:application/vnd.github.mister-fantastic-preview+json,  AuthToken: $(system.AccessToken)}' #, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
+      #    #body: # Required when method != GET && Method != HEAD
+      #    urlSuffix: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
+      #    waitForCompletion: 'true' # Options: true, false
+      #    #successCriteria: # Optional
