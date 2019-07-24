@@ -102,7 +102,7 @@ stages:
         
       - powershell: |
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
-          $headers = @{ Authorization = "Bearer 76d777a0bee75f960e4102ceaa71ac810eb1c0d3", Accept="application/vnd.github.mister-fantastic-preview+json" }
+          $headers = @{ "Authorization" = "Bearer 76d777a0bee75f960e4102ceaa71ac810eb1c0d3"; "Accept" = "application/vnd.github.mister-fantastic-preview+json" }
           $method="POST"
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -Verbose
           #$output = Invoke-RestMethod -Uri $logUrl -Method Post -Body $body -Headers @{
