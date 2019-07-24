@@ -6,6 +6,7 @@ variables:
   BuildYear: $[format('{0:yy}', pipeline.startTime)]
   BuildDate: $[format('{0:MMdd}', pipeline.startTime)]
   Revision: 0
+  Version: '0.0.0.0'
       
 stages:
 - stage: Build    
@@ -19,7 +20,9 @@ stages:
     - powershell: |
         $buildNumber = $Env:BUILD_BUILDNUMBER
         $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
+        $version=$(VersionPrefix).$(BuildYear).$(BuildDate).$(Revision)
         Write-Host "##vso[task.setvariable variable=Revision;]$revision"
+        Write-Host "##vso[task.setvariable variable=Version;]$version"
         
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
@@ -37,7 +40,8 @@ stages:
       inputs:
         projects: '$(SolutionFile)'
         #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Revision)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildYear).$(BuildDate).$(Revision)'
+        #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildYear).$(BuildDate).$(Revision)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(Version)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
@@ -86,7 +90,7 @@ stages:
 
       - script: |
           git checkout gh-pages
-          git update-ref HEAD gh-pages
+          rem git update-ref HEAD gh-pages
           rem git remote add origin https://miNationalrot@dev.azure.com/miNationalrot/miNationalrot/_git/miNationalrot
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
@@ -96,4 +100,5 @@ stages:
           echo git remote add...
           echo Version '$(Version)'
           git push --force origin gh-pages
+          git push
         displayName: deploy to gh-pages
