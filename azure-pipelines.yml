@@ -83,7 +83,6 @@ stages:
         inputs:
           archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
           destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
-          #destinationFolder: $(System.DefaultWorkingDirectory)
       
       - checkout: self
         persistCredentials: 'true'
