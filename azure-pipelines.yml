@@ -102,10 +102,7 @@ stages:
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
         displayName: 'run git gh-pages'
-        
-      - checkout: self
-        persistCredentials: 'true'
-
+      
       - powershell: |
           $token = $Env:Token
           Write-Host "SYSTEM-TOKEN is -- $env:SYSTEM_ACCESSTOKEN --"
