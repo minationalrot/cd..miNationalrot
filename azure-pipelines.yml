@@ -110,6 +110,7 @@ stages:
           $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
           $headers.Add("Authorization" , "Bearer $env:SYSTEM_ACCESSTOKEN")
           $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
+          Write-Host $headers
 
           $method="POST"
           #$output = Invoke-RestMethod $url -Method "POST" -Headers ${ "Accept" = 'application/vnd.github.mister-fantastic-preview+json' ; "Authorization" = 'Bearer $env:SYSTEM_ACCESSTOKEN' } -ContentType "application/json" -Verbose
