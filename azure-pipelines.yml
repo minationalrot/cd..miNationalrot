@@ -104,7 +104,7 @@ stages:
         displayName: 'run git gh-pages'
         
       - powershell: |
-          $token = $Env:Token2
+          $token = $Env:Token
           Write-Host "TOKEN is --" + $token + "--"
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{ "Authorization" = "Bearer " + $token; "Accept" = "application/vnd.github.mister-fantastic-preview+json" }
