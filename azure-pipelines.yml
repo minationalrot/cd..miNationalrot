@@ -107,7 +107,7 @@ stages:
           $token = $Env:Token
           Write-Host "TOKEN is -- $env:SYSTEM_ACCESSTOKEN --"
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
-          $headers = @{}
+          $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
           $headers.Add("Authorization" , "Bearer $env:SYSTEM_ACCESSTOKEN")
           $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
 
