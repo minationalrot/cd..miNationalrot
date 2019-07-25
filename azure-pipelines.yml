@@ -109,7 +109,7 @@ stages:
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{ "Authorization" = "Bearer " + $token; "Accept" = "application/vnd.github.mister-fantastic-preview+json" }
           $method="POST"
-          $output = Invoke-RestMethod $url -Method "POST" -Headers ${ Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN" , Accept = "application/vnd.github.v3+json",  } -Verbose
+          $output = Invoke-RestMethod $url -Method "POST" -Headers ${ Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN" , Accept = "application/vnd.github.mister-fantastic-preview+json" } -ContentType "application/vnd.github.mister-fantastic-preview+json" -Verbose
           Write-Host $output
           env:
             SYSTEM_ACCESSTOKEN: $(System.AccessToken)
