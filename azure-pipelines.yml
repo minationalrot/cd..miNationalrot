@@ -113,7 +113,7 @@ stages:
 
           $method="POST"
           #$output = Invoke-RestMethod $url -Method "POST" -Headers ${ "Accept" = 'application/vnd.github.mister-fantastic-preview+json' ; "Authorization" = 'Bearer $env:SYSTEM_ACCESSTOKEN' } -ContentType "application/json" -Verbose
-          $output = Invoke-RestMethod $url -Method "POST" -Headers @headers -ContentType "application/json" -Verbose
+          $output = Invoke-RestMethod $url -Method $method -Headers @headers -ContentType "application/json" -Verbose
           Write-Host $output
           env:
             SYSTEM_ACCESSTOKEN: $(System.AccessToken)
