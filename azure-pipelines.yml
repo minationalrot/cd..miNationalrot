@@ -93,7 +93,7 @@ stages:
           $token = $Env:Token
           Write-Host "SYSTEM-TOKEN as Makrois -- $(System.AccessToken)"
           Write-Host "MY_SYSTEM-TOKEN is -- $env:MY_SYSTEM_ACCESSTOKEN --"
-          Write-Host "github_pat is -- $env:GITHUB_PAT --"
+          Write-Host "github_pat is -- $(pipeline.github_pat) --"
           Write-Host "TOKEN3 is -- $Env:TOKEN3" 
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
@@ -106,7 +106,7 @@ stages:
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
           Write-Host $output
           env:
-            GITHUB_PAT: $(github_pat)
+            GITHUB_PAT: $(pipeline.github_pat)
 
       - powershell: |
           $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
