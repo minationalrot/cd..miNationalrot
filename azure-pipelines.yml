@@ -153,15 +153,3 @@ stages:
           Write-Host $output
           env:
             MY_SYSTEM_ACCESSTOKEN: $(System.AccessToken)
-
-      #- task: InvokeRESTAPI@1
-      #  inputs:
-      #    connectionType: 'connectedServiceName' # Options: connectedServiceName, connectedServiceNameARM
-      #    serviceConnection: 'miNationalrot-dev-as - GitHub'# Required when connectionType == ConnectedServiceName
-      #    #azureServiceConnection: # Required when connectionType == ConnectedServiceNameARM
-      #    method: 'POST' # Options: OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, PATCH
-      #    headers: '{Accept:application/vnd.github.mister-fantastic-preview+json,  AuthToken: $(system.AccessToken)}' #, PlanUrl: $(system.CollectionUri), ProjectId: $(system.TeamProjectId), HubName: $(system.HostType), PlanId: $(system.PlanId), JobId: $(system.JobId), TimelineId: $(system.TimelineId), TaskInstanceId: $(system.TaskInstanceId), AuthToken: $(system.AccessToken)}' 
-      #    #body: # Required when method != GET && Method != HEAD
-      #    urlSuffix: 'https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds'
-      #    waitForCompletion: 'true' # Options: true, false
-      #    #successCriteria: # Optional
