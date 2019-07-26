@@ -98,12 +98,6 @@ stages:
           Write-Host "MY_SYSTEM-TOKEN is -- $env:MY_SYSTEM_ACCESSTOKEN --"
           Write-Host "TOKEN is -- $env:Token --"
           Write-Host "TOKEN3 is -- $Env:TOKEN3" 
-          #if (!(Get-VstsTaskVariable -Name "System.AccessToken")) {
-          #    throw ("OAuth token by VSTS not found. Make sure to have 'Allow Scripts to Access OAuth Token' enabled in the build definition.                 Also, give 'Project Collection Build Service' 'Contribute' and 'Create Tag' permissions - Cog -> Version Control -> {Select Repository/ies}")
-          #}
-          #if (!($env:SYSTEM_ACCESSTOKEN )) {
-          #    throw ("OAuth token not found. Make sure to have 'Allow Scripts to Access OAuth Token' enabled in the build definition. Also, give 'Project Collection Build Service' 'Contribute' and 'Create Tag' permissions - Cog -> Version Control -> {Select Repository/ies}")
-          #}
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
           $headers.Add("Authorization" , "Bearer $env:SYSTEM_ACCESSTOKEN")
