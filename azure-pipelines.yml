@@ -90,7 +90,7 @@ stages:
         
       - script: |
           echo "Version:"
-          echo %CURRENT_VERSION%
+          echo %VERSION%
           git checkout gh-pages
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
