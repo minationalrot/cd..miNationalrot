@@ -100,7 +100,7 @@ stages:
           git push origin gh-pages
         displayName: 'run git push gh-pages'
         env:
-          CURRENT_VERSION: $(Version)
+          CURRENT_VERSION: $(VersionExt)
 
       - powershell: |
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
