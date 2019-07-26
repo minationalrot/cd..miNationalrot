@@ -89,16 +89,19 @@ stages:
         persistCredentials: 'true'
         
       - powershell: |
+          Write-Host "checkout gh-pages"
           git checkout gh-pages
+          Write-Host "remove fiels recursivly"
           git rm . -r
           #xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
+          Write-Host "copy release"
           Copy-Item -Path $(build.artifactstagingdirectory)\disttmp\minationalrot\dist\ -Destination $(System.DefaultWorkingDirectory)\
           git add .
+          Write-Host "commit release"
           git commit -m "Push force azure-deploy ***NO_CI*** %CURRENT_VERSION%"
-          echo git remote add...
-          echo Version '$(Version)'
-          git push --force origin gh-pages
+          Write-Host "recommit"
           git commit -m 'rebuild pages' --allow-empty
+          Write-Host "commit push"
           git push origin gh-pages
         displayName: 'run git push gh-pages'
         env:
