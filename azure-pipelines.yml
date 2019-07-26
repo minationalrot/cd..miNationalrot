@@ -1,4 +1,4 @@
-)name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yy).$(Date:MMdd)$(Rev:.r)
+name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yy).$(Date:MMdd)$(Rev:.r)
 variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
