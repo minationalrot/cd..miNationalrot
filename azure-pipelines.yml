@@ -6,7 +6,7 @@ variables:
   BuildYear: $[format('{0:yy}', pipeline.startTime)]
   BuildDate: $[format('{0:MMdd}', pipeline.startTime)]
   Revision: 0
-  Version: '0.0.0.0'
+  VersionExt: '0.0.0.0'
       
 stages:
 - stage: Build    
@@ -22,7 +22,7 @@ stages:
         $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
         $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
         Write-Host "##vso[task.setvariable variable=Revision;]$revision"
-        Write-Host "##vso[task.setvariable variable=Version;]$version"
+        Write-Host "##vso[task.setvariable variable=VersionExt;]$version"
         
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
@@ -41,7 +41,7 @@ stages:
         projects: '$(SolutionFile)'
         #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Revision)'
         #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildYear).$(BuildDate).$(Revision)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(Version)'
+        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionExt)'
 
     - task: DotNetCoreCLI@2
       displayName: Test
@@ -95,7 +95,7 @@ stages:
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
           git add .
-          git commit -m "Push force azure-deploy ***NO_CI*** xxx"
+          git commit -m "Push force azure-deploy ***NO_CI*** %VERSIONEXT%"
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
         displayName: 'run git push gh-pages'
