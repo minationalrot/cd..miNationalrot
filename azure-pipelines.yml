@@ -89,18 +89,6 @@ stages:
         clean: true
         persistCredentials: 'true'
         
-      - powershell: |
-          Write-Host "github_pat is -- $(github_pat) --"
-          $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
-          $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-          $headers.Add("Authorization" , "Bearer $(github_pat)")
-          $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
-          Write-Host $headers
-
-          $method="POST"
-          $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
-          Write-Host $output
-
       - script: |
           git checkout gh-pages
           git rm . -r
@@ -112,29 +100,20 @@ stages:
           git push --force origin gh-pages
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
-        displayName: 'run git gh-pages'
-      
+        displayName: 'run git push gh-pages'
+
+
       - powershell: |
-          $token = $Env:Token
-          Write-Host "SYSTEM-TOKEN as Makrois -- $(System.AccessToken)"
-          Write-Host "MY_SYSTEM-TOKEN is -- $env:MY_SYSTEM_ACCESSTOKEN --"
-          Write-Host "TOKEN is -- $env:Token --"
-          Write-Host "TOKEN3 is -- $Env:TOKEN3" 
-          #if (!(Get-VstsTaskVariable -Name "System.AccessToken")) {
-          #    throw ("OAuth token by VSTS not found. Make sure to have 'Allow Scripts to Access OAuth Token' enabled in the build definition.                 Also, give 'Project Collection Build Service' 'Contribute' and 'Create Tag' permissions - Cog -> Version Control -> {Select Repository/ies}")
-          #}
-          #if (!($env:SYSTEM_ACCESSTOKEN )) {
-          #    throw ("OAuth token not found. Make sure to have 'Allow Scripts to Access OAuth Token' enabled in the build definition. Also, give 'Project Collection Build Service' 'Contribute' and 'Create Tag' permissions - Cog -> Version Control -> {Select Repository/ies}")
-          #}
+          Write-Host "github_pat is -- $(github_pat) --"
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-          $headers.Add("Authorization" , "Bearer $env:SYSTEM_ACCESSTOKEN")
+          $headers.Add("Authorization" , "Bearer $(github_pat)")
           $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
           Write-Host $headers
 
           $method="POST"
-          #$output = Invoke-RestMethod $url -Method "POST" -Headers ${ "Accept" = 'application/vnd.github.mister-fantastic-preview+json' ; "Authorization" = 'Bearer $env:SYSTEM_ACCESSTOKEN' } -ContentType "application/json" -Verbose
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
           Write-Host $output
-          env:
-            MY_SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+        displayname: 'rebuild gh-pages'
+
+
