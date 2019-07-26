@@ -1,4 +1,4 @@
-name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yy).$(Date:MMdd)$(Rev:.r)
+)name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yy).$(Date:MMdd)$(Rev:.r)
 variables:
   SolutionFile: miNationalrot.sln
   BuildConfiguration: Release
@@ -89,11 +89,12 @@ stages:
         persistCredentials: 'true'
         
       - script: |
+          echo "Version:", $(Version)
           git checkout gh-pages
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
           git add .
-          git commit -m "Push force azure-deploy ***NO_CI*** %VERSION%"
+          git commit -m "Push force azure-deploy ***NO_CI*** $($(Version))"
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
         displayName: 'run git push gh-pages'
