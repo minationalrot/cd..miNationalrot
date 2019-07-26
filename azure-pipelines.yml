@@ -86,7 +86,6 @@ stages:
           destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
       
       - checkout: self
-        clean: true
         persistCredentials: 'true'
         
       - script: |
@@ -94,23 +93,21 @@ stages:
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
           git add .
-          git commit -m "Push force azure-deploy ***NO_CI*** $(Version)"
+          git commit -m "Push force azure-deploy ***NO_CI*** $env:CURRENT_VERSION"
           echo git remote add...
           echo Version '$(Version)'
           git push --force origin gh-pages
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
         displayName: 'run git push gh-pages'
-
+        env:
+          CURRENT_VERSION: $(Version)
 
       - powershell: |
-          Write-Host "github_pat is -- $(github_pat) --"
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
-          $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+          $headers = @{}
           $headers.Add("Authorization" , "Bearer $(github_pat)")
           $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
-          Write-Host $headers
-
           $method="POST"
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
           Write-Host $output
