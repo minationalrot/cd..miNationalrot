@@ -114,6 +114,6 @@ stages:
           $method="POST"
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
           Write-Host $output
-        displayname: 'rebuild gh-pages'
+        displayName: 'rebuild gh-pages'
 
 
