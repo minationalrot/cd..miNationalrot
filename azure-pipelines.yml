@@ -90,14 +90,13 @@ stages:
         persistCredentials: 'true'
         
       - powershell: |
-          $token = $Env:Token
           Write-Host "SYSTEM-TOKEN as Makrois -- $(System.AccessToken)"
           Write-Host "MY_SYSTEM-TOKEN is -- $env:MY_SYSTEM_ACCESSTOKEN --"
           Write-Host "github_pat is -- $(github_pat) --"
-          Write-Host "TOKEN3 is -- $Env:TOKEN3" 
+          Write-Host "MY_GITHUB_PAT is -- $env:MY_GITHUB_PAT --"
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-          $headers.Add("Authorization" , "Bearer $env:GITHUB_PAT")
+          $headers.Add("Authorization" , "Bearer $env:MY_GITHUB_PAT")
           $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
           Write-Host $headers
 
@@ -106,7 +105,7 @@ stages:
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
           Write-Host $output
           env:
-            GITHUB_PAT: $(github_pat)
+            MY_GITHUB_PAT: $(github_pat)
 
       - powershell: |
           $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
