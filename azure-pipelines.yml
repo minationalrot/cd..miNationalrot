@@ -39,8 +39,6 @@ stages:
       displayName: Build
       inputs:
         projects: '$(SolutionFile)'
-        #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildDate).$(Revision)'
-        #arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionPrefix).$(BuildYear).$(BuildDate).$(Revision)'
         arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionExt)'
 
     - task: DotNetCoreCLI@2
@@ -49,7 +47,6 @@ stages:
         command: test
         projects: '$(Parameters.TestProjects)'
         arguments: '--configuration $(BuildConfiguration)'
-
 
     - task: DotNetCoreCLI@2
       displayName: Publish
@@ -74,6 +71,7 @@ stages:
      steps:
       - powershell: |
         $buildNumber2 = $Env:BUILD_BUILDNUMBER
+        Write-Host 'BN:{0}' -f $($buildNumber2 )
         $revision2=$buildNumber2.Substring($buildNumber2.LastIndexOf('.') + 1)
         $version2='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
         Write-Host "##vso[task.setvariable variable=Revision;]$revision2"
