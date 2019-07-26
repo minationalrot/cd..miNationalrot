@@ -72,6 +72,12 @@ stages:
       name: Default
 
      steps:
+      - powershell: |
+        $buildNumber = $Env:BUILD_BUILDNUMBER
+        $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
+        $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
+        Write-Host "##vso[task.setvariable variable=Revision;]$revision"
+        Write-Host "##vso[task.setvariable variable=VersionExt;]$version"
 
       - task: DownloadBuildArtifacts@0
         displayName: Download Build Artifacts to '$(System.ArtifactsDirectory)'
