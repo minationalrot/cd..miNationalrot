@@ -7,9 +7,6 @@ variables:
   BuildDate: $[format('{0:MMdd}', pipeline.startTime)]
   Revision: 0
   Version: '0.0.0.0'
-  Token: $(System.AccessToken)
-  Token2: 'Testy'
-  
       
 stages:
 - stage: Build    
@@ -109,7 +106,7 @@ stages:
           $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
           Write-Host $output
           env:
-            MY_SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+            SYSTEM_ACCESSTOKEN: $(System.AccessToken)
 
       - powershell: |
           $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
