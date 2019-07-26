@@ -89,12 +89,13 @@ stages:
         persistCredentials: 'true'
         
       - script: |
-          echo "Version:", $(Version)
+          echo "Version:"
+          echo $(Version)
           git checkout gh-pages
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
           git add .
-          git commit -m "Push force azure-deploy ***NO_CI*** $($(Version))"
+          git commit -m "Push force azure-deploy ***NO_CI*** $(Version)"
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
         displayName: 'run git push gh-pages'
