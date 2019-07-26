@@ -6,7 +6,7 @@ variables:
   BuildYear: $[format('{0:yy}', pipeline.startTime)]
   BuildDate: $[format('{0:MMdd}', pipeline.startTime)]
   Revision: 0
-  VersionExt: '0.0.0.0'
+  #VersionExt: '0.0.0.0'
       
 stages:
 - stage: Build    
