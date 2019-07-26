@@ -89,12 +89,11 @@ stages:
         persistCredentials: 'true'
         
       - script: |
-          $version2 = $Env:Version
           git checkout gh-pages
           git rm . -r
           xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
           git add .
-          git commit -m "Push force azure-deploy ***NO_CI*** $($env:Version)"
+          git commit -m "Push force azure-deploy ***NO_CI*** %CURRENT_VERSION%"
           echo git remote add...
           echo Version '$(Version)'
           git push --force origin gh-pages
