@@ -93,7 +93,7 @@ stages:
           $token = $Env:Token
           Write-Host "SYSTEM-TOKEN as Makrois -- $(System.AccessToken)"
           Write-Host "MY_SYSTEM-TOKEN is -- $env:MY_SYSTEM_ACCESSTOKEN --"
-          Write-Host "github_pat is -- $env:$(github_pat) --"
+          Write-Host "github_pat is -- $env:GITHUB_PAT --"
           Write-Host "TOKEN3 is -- $Env:TOKEN3" 
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
