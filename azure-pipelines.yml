@@ -73,11 +73,11 @@ stages:
 
      steps:
       - powershell: |
-        $buildNumber = $Env:BUILD_BUILDNUMBER
-        $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
-        $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
-        Write-Host "##vso[task.setvariable variable=Revision;]$revision"
-        Write-Host "##vso[task.setvariable variable=VersionExt;]$version"
+        $buildNumber2 = $Env:BUILD_BUILDNUMBER
+        $revision2=$buildNumber2.Substring($buildNumber2.LastIndexOf('.') + 1)
+        $version2='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
+        Write-Host "##vso[task.setvariable variable=Revision;]$revision2"
+        Write-Host "##vso[task.setvariable variable=VersionExt;]$version2"
 
       - task: DownloadBuildArtifacts@0
         displayName: Download Build Artifacts to '$(System.ArtifactsDirectory)'
