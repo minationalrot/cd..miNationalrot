@@ -9,7 +9,7 @@ variables:
   Version: '0.0.0.0'
   Token: $(System.AccessToken)
   Token2: 'Testy'
-  Token3: ${{$(System.AccessToken)}}
+  
       
 stages:
 - stage: Build    
