@@ -96,7 +96,7 @@ stages:
           Write-Host "MY_GITHUB_PAT is -- $env:MY_GITHUB_PAT --"
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
           $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-          $headers.Add("Authorization" , "Bearer $env:MY_GITHUB_PAT")
+          $headers.Add("Authorization" , "Bearer $(github_pat)")
           $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
           Write-Host $headers
 
