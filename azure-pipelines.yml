@@ -93,6 +93,31 @@ stages:
         persistCredentials: 'true'
         
       - powershell: |
+          $token = $Env:Token
+          Write-Host "SYSTEM-TOKEN as Makrois -- $(System.AccessToken)"
+          Write-Host "MY_SYSTEM-TOKEN is -- $env:MY_SYSTEM_ACCESSTOKEN --"
+          Write-Host "TOKEN is -- $env:Token --"
+          Write-Host "TOKEN3 is -- $Env:TOKEN3" 
+          #if (!(Get-VstsTaskVariable -Name "System.AccessToken")) {
+          #    throw ("OAuth token by VSTS not found. Make sure to have 'Allow Scripts to Access OAuth Token' enabled in the build definition.                 Also, give 'Project Collection Build Service' 'Contribute' and 'Create Tag' permissions - Cog -> Version Control -> {Select Repository/ies}")
+          #}
+          #if (!($env:SYSTEM_ACCESSTOKEN )) {
+          #    throw ("OAuth token not found. Make sure to have 'Allow Scripts to Access OAuth Token' enabled in the build definition. Also, give 'Project Collection Build Service' 'Contribute' and 'Create Tag' permissions - Cog -> Version Control -> {Select Repository/ies}")
+          #}
+          $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
+          $headers = @{} #New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+          $headers.Add("Authorization" , "Bearer $env:SYSTEM_ACCESSTOKEN")
+          $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
+          Write-Host $headers
+
+          $method="POST"
+          #$output = Invoke-RestMethod $url -Method "POST" -Headers ${ "Accept" = 'application/vnd.github.mister-fantastic-preview+json' ; "Authorization" = 'Bearer $env:SYSTEM_ACCESSTOKEN' } -ContentType "application/json" -Verbose
+          $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
+          Write-Host $output
+          env:
+            MY_SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+
+      - powershell: |
           $url = "$($env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI)$env:SYSTEM_TEAMPROJECTID/_apis/build/definitions/$($env:SYSTEM_DEFINITIONID)?api-version=2.0"
           Write-Host "URL:" $url
           $definition = Invoke-RestMethod -Uri $url -Headers @{ Authorization = "Bearer $env:SYSTEM_ACCESSTOKEN" }
