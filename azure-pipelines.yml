@@ -90,7 +90,7 @@ stages:
           Write-Host "##vso[task.setvariable variable=VersionExt;]$asmversion"
         
       - script: |
-          echo "Version:"
+          echo "VersionExt:"
           echo %VERSIONEXT%
           git checkout gh-pages
           git rm . -r
@@ -99,9 +99,7 @@ stages:
           git commit -m "Push force azure-deploy ***NO_CI*** %VERSIONEXT%"
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
-        displayName: 'run git push gh-pages'
-        env:
-          CURRENT_VERSION: $(VersionExt)
+        displayName: 'run git push gh-pages $(VersionExt)'
 
       - powershell: |
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
