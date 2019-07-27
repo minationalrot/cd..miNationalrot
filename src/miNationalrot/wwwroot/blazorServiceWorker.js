@@ -37,10 +37,14 @@ const filesToCache = [
      
     // App specific requirements
     '_framework/_bin/miNationalrot.dll',
-    //'/_framework/_bin/osisa.Smart.Webapp.pdb',
     'css/bootstrap/bootstrap.min.css',
     'css/open-iconic/font/css/open-iconic-bootstrap.min.css',
     'css/site.css',
+    'css/open-iconic/font/fonts/open-iconic.woff',
+    
+    'icons/android-launchericon-192-192.png',
+    'icons/android-launchericon-512-512.png',
+    
     //'/favicon.ico',
     'index.html',
  
