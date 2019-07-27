@@ -11,7 +11,7 @@ variables:
 stages:
 - stage: Build    
   jobs:
-  - job: Build Job
+  - job: DotNetBuild
     pool:
       #name: Hosted Windows 2019 with VS2019
       name: Default
@@ -63,7 +63,7 @@ stages:
 
 - stage: Deploy
   jobs:
-   - job: Deploy To GitHub Pages
+   - job: GitHubPagesPush
      pool:
       #name: Hosted Windows 2019 with VS2019
       name: Default
