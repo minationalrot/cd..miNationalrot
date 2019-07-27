@@ -84,7 +84,7 @@ stages:
       - checkout: self
         persistCredentials: 'true'
         
-       - powershell: |
+      - powershell: |
           $asmversion=[Reflection.AssemblyName]::GetAssemblyName("minationalrot.dll").Version
           Write-Host $asmversion
           Write-Host "##vso[task.setvariable variable=VersionExt;]$asmversion"
