@@ -25,9 +25,9 @@ stages:
         Write-Host "##vso[task.setvariable variable=VersionExt;]$version"
         
     - task: UseDotNet@2
-      displayName: 'Use .NET Core sdk 3.0.100-preview6-012264'
+      displayName: 'Use .NET Core sdk 3.0.100-preview7-012821'
       inputs:
-        version: 3.0.100-preview6-012264
+        version: 3.0.100-preview7-012821
 
     - task: DotNetCoreCLI@2
       displayName: Restore
