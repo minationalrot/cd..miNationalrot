@@ -20,9 +20,10 @@ stages:
     - powershell: |
         $buildNumber = $Env:BUILD_BUILDNUMBER
         $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
-        $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(revision)
         Write-Host "##vso[task.setvariable variable=Revision;]$revision"
+        $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(revision)
         Write-Host "##vso[task.setvariable variable=VersionExt;]$version"
+      displayName: Get Version Number
         
     - task: UseDotNet@2
       displayName: 'Use .NET Core sdk 3.0.100-preview7-012821'
