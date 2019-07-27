@@ -11,7 +11,7 @@ variables:
 stages:
 - stage: Build    
   jobs:
-  - job: Build
+  - job: Build Job
     pool:
       #name: Hosted Windows 2019 with VS2019
       name: Default
@@ -63,7 +63,7 @@ stages:
 
 - stage: Deploy
   jobs:
-   - job: Deploy
+   - job: Deploy To gh-pages 
      pool:
       #name: Hosted Windows 2019 with VS2019
       name: Default
@@ -99,7 +99,7 @@ stages:
           git commit -m "Push force azure-deploy ***NO_CI*** %VERSIONEXT%"
           git commit -m 'rebuild pages' --allow-empty
           git push origin gh-pages
-        displayName: 'run git push gh-pages $(VersionExt)'
+        displayName: 'run git push gh-pages'
 
       - powershell: |
           $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
