@@ -63,7 +63,7 @@ stages:
 
 - stage: Deploy
   jobs:
-   - job: Deploy To gh-pages 
+   - job: Deploy To GitHub Pages
      pool:
       #name: Hosted Windows 2019 with VS2019
       name: Default
