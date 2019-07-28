@@ -35,10 +35,10 @@
     <Content Update="wwwroot\favicon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\icons\android-launchericon-192-192.png">
+    <Content Update="wwwroot\icons\icon-192-192.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\icons\android-launchericon-512-512.png">
+    <Content Update="wwwroot\icons\icon-512-512.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\index.html">

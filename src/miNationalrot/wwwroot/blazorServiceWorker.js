@@ -39,8 +39,8 @@ const filesToCache = [
     'css/open-iconic/font/css/open-iconic-bootstrap.min.css',
     'css/site.css',
     'css/open-iconic/font/fonts/open-iconic.woff',
-    'icons/android-launchericon-192-192.png',
-    'icons/android-launchericon-512-512.png',
+    'icons/icon-192-192.png',
+    'icons/icon-512-512.png',
     'favicon.ico',
     'index.html',
  
@@ -110,3 +110,61 @@ self.addEventListener('fetch', event => {
             })
     );
 });
+
+
+var deferredPrompt;
+
+self.addEventListener('beforeinstallprompt', function (e) {
+    // Prevent Chrome 67 and earlier from automatically showing the prompt
+    e.preventDefault();
+    // Stash the event so it can be triggered later.
+    deferredPrompt = e;
+
+    showAddToHomeScreen();
+
+});
+
+function showAddToHomeScreen() {
+
+    var a2hsBtn = document.querySelector(".ad2hs-prompt");
+
+    a2hsBtn.style.display = "block";
+
+    a2hsBtn.addEventListener("click", addToHomeScreen);
+
+}
+
+function addToHomeScreen() {
+    var a2hsBtn = document.querySelector(".ad2hs-prompt");  // hide our user interface that shows our A2HS button
+    a2hsBtn.style.display = 'none';  // Show the prompt
+    deferredPrompt.prompt();  // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice
+        .then(function (choiceResult) {
+
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the A2HS prompt');
+            } else {
+                console.log('User dismissed the A2HS prompt');
+            }
+
+            deferredPrompt = null;
+
+        });
+}
+
+//https://mobiforge.com/design-development/pwa-minimus-a-minimal-pwa-checklist
+//self.addEventListener('install', function (event) {
+//    event.waitUntil(
+//        caches.open('sw-cache').then(function (cache) {
+//            return cache.add('index.html');
+//        })
+//    );
+//});
+
+//self.addEventListener('fetch', function (event) {
+//    event.respondWith(
+//        caches.match(event.request).then(function (response) {
+//            return response || fetch(event.request);
+//        })
+//    );
+//});
