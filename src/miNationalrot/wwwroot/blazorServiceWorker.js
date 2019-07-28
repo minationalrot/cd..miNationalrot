@@ -51,7 +51,7 @@ const filesToCache = [
     'manifest.json'
 ];
  
-const staticCacheName = 'blazor-cache-v3';
+const staticCacheName = 'blazor-cache-v4';
 
 self.addEventListener('install', event => {
     self.skipWaiting();
