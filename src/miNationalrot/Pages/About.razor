@@ -1,6 +1,16 @@
 ﻿@page "/about"
+@using System.Runtime.CompilerServices
 
 <h1>Wer simer</h1>
 
 Welcome to your new app.
 
+
+<p>Applikations-Version: @version</p>
+
+
+
+@code {
+
+    string version = typeof(Program).Assembly.FullName;
+}
