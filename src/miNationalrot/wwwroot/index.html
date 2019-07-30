@@ -1,51 +1,121 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Mi Nationalrot</title>
-    <base href="/" />
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/site.css" />
-    <link href="manifest.json" rel="manifest" />
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <script src="blazorSWRegister.js"></script>
+    <title>mi Nationalrot</title>
+<meta name="description" content="Die App für die Nationalratswahlen 2019">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="mi Nationalrot">
+<meta name="apple-mobile-web-app-title" content="mi Nationalrot">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<link rel="apple-touch-icon" href="meta/ios/ios-appicon-120-120.png">
+<link rel="apple-touch-icon" sizes="152x152" href="meta/ios/ios-appicon-152-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="meta/ios/ios-appicon-180-180.png">
+<link rel="apple-touch-icon" sizes="120x120" href="meta/ios/ios-appicon-120-120.png">
+<link href="meta/ios/apple-touch-startup-image-320x460.png" media="(device-width: 320px)"
+    rel="apple-touch-startup-image">
+<!-- iPhone (Retina) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+<!-- iPad (portrait) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-768x1004.png" media="(device-width: 768px) and (orientation: portrait)"
+    rel="apple-touch-startup-image">
+<!-- iPad (landscape) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-748x1024.png" media="(device-width: 768px) and (orientation: landscape)"
+    rel="apple-touch-startup-image">
+<!-- iPad (Retina, portrait) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-1536x2008.png"
+    media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image">
+<!-- iPad (Retina, landscape) SPLASHSCREEN-->
+<link href="meta/ios/apple-touch-startup-image-2048x1496.png"
+    media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)"
+    rel="apple-touch-startup-image">
+<!-- iPhone 6/7/8 -->
+<link href="/meta/ios/apple-touch-startup-image-750x1334.png"
+    media="(device-width: 375px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<!-- iPhone 6 Plus/7 Plus/8 Plus -->
+<link href="/meta/ios/apple-touch-startup-image-1242x2208.png"
+    media="(device-width: 414px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+
+<meta name="msapplication-starturl" content="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="favicon.ico" rel="shortcut icon">
+<link rel="icon" type="image/png" href="meta/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="meta/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="meta/favicon-96x96.png" sizes="96x96">
+
+<meta name="theme-color" content="#052767">
+
+<link rel="manifest" href="manifest.json">
+<meta name="generator" content="PWA Starter">
 </head>
+
 <body>
-    <app>E Moment bi am lade...</app>
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
-        // Single Page Apps for GitHub Pages
-        // https://github.com/rafrex/spa-github-pages
-        // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-        // ----------------------------------------------------------------------
-        // This script checks to see if a redirect is present in the query string
-        // and converts it back into the correct url and adds it to the
-        // browser's history using window.history.replaceState(...),
-        // which won't cause the browser to attempt to load the new url.
-        // When the single page app is loaded further down in this file,
-        // the correct url will be waiting in the browser's history for
-        // the single page app to route accordingly.
-        (function (l) {
-            if (l.search) {
-                var q = {};
-                l.search.slice(1).split('&').forEach(function (v) {
-                    var a = v.split('=');
-                    q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-                });
-                if (q.p !== undefined) {
-                    window.history.replaceState(null, null,
-                        l.pathname.slice(0, -1) + (q.p || '') +
-                        (q.q ? ('?' + q.q) : '') +
-                        l.hash
-                    );
-                }
+
+    [You Page Content Goes Here]
+
+    <!-- Common Add to Homescreen Template -->
+    <div class="ath-container banner-bottom-center">
+        <div class="ath-banner">
+            <div class="ath-banner-cell">
+                <img src="meta/windows/windows-storelogo-50-50.png" alt="PWA" class="ath-prompt-logo">
+            </div>
+            <div class="ath-banner-title">
+                <p>Install this PWA?</p>
+            </div>
+            <div class="ath-banner-cell">
+                <button class="btn btn-cancel btn-link">Not Now</button>
+            </div>
+            <div class="ath-banner-cell">
+                <button class="btn btn-install btn-success">Install</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="d-flex justify-content-center my-1 py-2 mx-auto">
+        <p>Generated by <a href="https://pwastarter.love2dev.com/">Love2Dev's PWA Starter</a></p>
+    </div>
+        <script src="js/addtohomescreen.js"></script>
+    <script>
+        addToHomescreen( {
+            appID: "miNationalrot",
+            appName: "miNationalrot",
+            lifespan: 15,
+	        startDelay:0,
+            mandatory: true,
+            autostart: true,
+            skipFirstVisit: true,
+            minSessions: 1,
+            displayPace: 0,
+            customPrompt: {
+                title: "mi Nationalrot installieren?",
+                src: "meta/favicon-96x96.png",
+                cancelMsg: "Abbrechen",
+                installMsg: "Installieren"
             }
-        }(window.location))
+        } );
     </script>
-    <!-- End Single Page Apps for GitHub Pages -->
-    <!-- Temporary polyfill for IE support -->
-    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script> -->
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script>
+        if ( "serviceWorker" in navigator ) {
+
+            navigator.serviceWorker.register( "/sw.js" )
+                .then( function ( registration ) { // Registration was successful
+
+                    console.log( "ServiceWorker registration successful with scope: ", registration.scope );
+
+                } ).catch( function ( err ) { // registration failed :(
+
+                    console.log( "ServiceWorker registration failed: ", err );
+
+                } );
+
+        }
+    </script>
 </body>
+
 </html>
