@@ -45,7 +45,7 @@
     <Content Update="wwwroot\icons\icon-512-512.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="wwwroot\index.html">
+    <Content Update="wwwroot\xxxindex.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\manifest.json">
