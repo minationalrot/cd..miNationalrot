@@ -13,8 +13,8 @@ stages:
   jobs:
   - job: DotNetBuild
     pool:
-      name: Hosted Windows 2019 with VS2019
-      #name: Default
+      #name: Hosted Windows 2019 with VS2019
+      name: Default
 
     steps:
     - powershell: |
@@ -86,8 +86,8 @@ stages:
   jobs:
    - job: GitHubPagesPush
      pool:
-      name: Hosted Windows 2019 with VS2019
-      #name: Default
+      #name: Hosted Windows 2019 with VS2019
+      name: Default
 
      steps:
       - task: DownloadBuildArtifacts@0
