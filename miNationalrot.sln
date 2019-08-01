@@ -16,12 +16,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SiteItems", "SiteItems", "{
 		Test.Build.props = Test.Build.props
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{EC2AA02C-142E-4A5C-8F3C-006B2B8388E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC2AA02C-142E-4A5C-8F3C-006B2B8388E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2AA02C-142E-4A5C-8F3C-006B2B8388E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F31843F-A90E-46E8-BF52-6B2687067F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F31843F-A90E-46E8-BF52-6B2687067F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F31843F-A90E-46E8-BF52-6B2687067F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
