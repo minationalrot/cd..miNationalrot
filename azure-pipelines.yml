@@ -112,10 +112,10 @@ stages:
           git add -A
           git commit -m "Create build $(Build.BuildId)"
           rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
-          git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
+          git push -f https://%PAT%@github.com/minationalrot/miNationalrot.git gh-pages
         displayName: 'Publish to GitHub Pages'
         env:
-          PAT: $(github_pat3)
+          PAT: $(github_pat2)
           FL: $(Flag)
           NAME: RemoOser
           EMAIL: remo.oser@osisa.com
