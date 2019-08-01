@@ -86,4 +86,72 @@ stages:
         git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
       displayName: 'Publish to GitHub Pages'
       env:
-        PAT: $(github_pat2)
+        PAT: $(github_pat3)
+        NAME: RemoOser
+        EMAIL: remo.oser@osisa.com
+
+- stage: Deploy
+  jobs:
+   - job: GitHubPagesPush
+     pool:
+      #name: Hosted Windows 2019 with VS2019
+      name: Default
+
+     steps:
+      - task: DownloadBuildArtifacts@0
+        displayName: Download Build Artifacts to '$(System.ArtifactsDirectory)'
+        inputs:
+          artifactName: 'drop'
+          downloadPath: '$(System.ArtifactsDirectory)' 
+
+      - task: ExtractFiles@1
+        displayName: 'Extract files'
+        inputs:
+          archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
+          destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
+      
+      - checkout: self
+        persistCredentials: 'true'
+        
+      - powershell: |
+          $asmversion=[Reflection.AssemblyName]::GetAssemblyName("$(build.artifactstagingdirectory)\disttmp\miNationalrot\dist\_framework\_bin\minationalrot.dll").Version
+          Write-Host $asmversion
+          Write-Host "##vso[task.setvariable variable=VersionExt;]$asmversion"
+        
+      # - script: |
+      #     git config --global user.name "$NAME"
+      #     git config --global user.email "$EMAIL"
+      #     cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+      #     git init
+      #     git checkout -b gh-pages
+      #     git add -A
+      #     git commit -m "Create build $(Build.BuildId)"
+      #     rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
+      #     git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
+      #   displayName: 'Publish to GitHub Pages'
+      #   env:
+      #     PAT: $(github_pat)
+      #     NAME: RemoOser
+      #     EMAIL: remo.oser@osisa.com
+
+      # - script: |
+      #     echo "VersionExt:"
+      #     echo %VERSIONEXT%
+      #     git checkout gh-pages
+      #     git rm . -r
+      #     xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
+      #     git add .
+      #     git commit -m "Push force azure-deploy ***NO_CI*** %VERSIONEXT%"
+      #     git commit -m 'rebuild pages' --allow-empty
+      #     git push origin gh-pages
+      #   displayName: 'run git push gh-pages'
+
+      # - powershell: |
+      #     $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
+      #     $headers = @{}
+      #     $headers.Add("Authorization" , "Bearer $(github_pat)")
+      #     $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
+      #     $method="POST"
+      #     $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
+      #     Write-Host $output
+      #   displayName: 'rebuild gh-pages'
