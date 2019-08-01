@@ -9,7 +9,7 @@ variables:
   VersionExt: '0.0.0.0'
       
 stages:
-- stage: Build    
+- stage: Build2    
   jobs:
   - job: DotNetBuild
     pool:
