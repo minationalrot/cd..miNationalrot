@@ -73,23 +73,6 @@ stages:
         PathtoPublish: '$(build.artifactstagingdirectory)'
         artifactName: 'drop' 
 
-    - script: |
-        echo $PAT
-        git config --global user.name "$NAME"
-        git config --global user.email "$EMAIL"
-        cd $(build.artifactstagingdirectory)/minationalrot/dist
-        git init
-        git checkout -b gh-pages
-        git add -A
-        git commit -m "Create build $(Build.BuildId)"
-        rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
-        git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
-      displayName: 'Publish to GitHub Pages'
-      env:
-        PAT: $(github_pat3)
-        NAME: RemoOser
-        EMAIL: remo.oser@osisa.com
-
 - stage: Deploy
   jobs:
    - job: GitHubPagesPush
@@ -117,6 +100,23 @@ stages:
           $asmversion=[Reflection.AssemblyName]::GetAssemblyName("$(build.artifactstagingdirectory)\disttmp\miNationalrot\dist\_framework\_bin\minationalrot.dll").Version
           Write-Host $asmversion
           Write-Host "##vso[task.setvariable variable=VersionExt;]$asmversion"
+        
+      - script: |
+          echo %PAT%
+          git config --global user.name "$NAME"
+          git config --global user.email "$EMAIL"
+          cd $(build.artifactstagingdirectory)/minationalrot/dist
+          git init
+          git checkout -b gh-pages
+          git add -A
+          git commit -m "Create build $(Build.BuildId)"
+          rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
+          git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
+        displayName: 'Publish to GitHub Pages'
+        env:
+          PAT: $(github_pat3)
+          NAME: RemoOser
+          EMAIL: remo.oser@osisa.com
         
       # - script: |
       #     git config --global user.name "$NAME"
