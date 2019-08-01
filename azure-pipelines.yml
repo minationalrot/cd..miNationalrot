@@ -66,9 +66,10 @@ stages:
         artifactName: 'drop' 
 
     - script: |
+        echo $PAT
         git config --global user.name "$NAME"
         git config --global user.email "$EMAIL"
-        cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+        cd $(build.artifactstagingdirectory)/minationalrot/dist
         git init
         git checkout -b gh-pages
         git add -A
