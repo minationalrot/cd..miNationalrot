@@ -65,6 +65,22 @@ stages:
         PathtoPublish: '$(build.artifactstagingdirectory)'
         artifactName: 'drop' 
 
+    - script: |
+        git config --global user.name "$NAME"
+        git config --global user.email "$EMAIL"
+        cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+        git init
+        git checkout -b gh-pages
+        git add -A
+        git commit -m "Create build $(Build.BuildId)"
+        rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
+        git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
+      displayName: 'Publish to GitHub Pages'
+      env:
+        PAT: $(github_pat)
+        NAME: RemoOser
+        EMAIL: remo.oser@osisa.com
+
 - stage: Deploy
   jobs:
    - job: GitHubPagesPush
@@ -93,21 +109,21 @@ stages:
           Write-Host $asmversion
           Write-Host "##vso[task.setvariable variable=VersionExt;]$asmversion"
         
-      - script: |
-          git config --global user.name "$NAME"
-          git config --global user.email "$EMAIL"
-          cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-          git init
-          git checkout -b gh-pages
-          git add -A
-          git commit -m "Create build $(Build.BuildId)"
-          rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
-          git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
-        displayName: 'Publish to GitHub Pages'
-        env:
-          PAT: $(github_pat)
-          NAME: RemoOser
-          EMAIL: remo.oser@osisa.com
+      # - script: |
+      #     git config --global user.name "$NAME"
+      #     git config --global user.email "$EMAIL"
+      #     cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
+      #     git init
+      #     git checkout -b gh-pages
+      #     git add -A
+      #     git commit -m "Create build $(Build.BuildId)"
+      #     rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
+      #     git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
+      #   displayName: 'Publish to GitHub Pages'
+      #   env:
+      #     PAT: $(github_pat)
+      #     NAME: RemoOser
+      #     EMAIL: remo.oser@osisa.com
 
       # - script: |
       #     echo "VersionExt:"
