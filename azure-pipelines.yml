@@ -103,6 +103,7 @@ stages:
         
       - script: |
           echo %PAT%
+          echo %FL%
           git config --global user.name "$NAME"
           git config --global user.email "$EMAIL"
           cd $(build.artifactstagingdirectory)/minationalrot/dist
@@ -115,6 +116,7 @@ stages:
         displayName: 'Publish to GitHub Pages'
         env:
           PAT: $(github_pat3)
+          FL: $(Flag)
           NAME: RemoOser
           EMAIL: remo.oser@osisa.com
         
