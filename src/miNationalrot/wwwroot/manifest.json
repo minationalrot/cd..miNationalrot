@@ -1,13 +1,13 @@
 {
-  "name": "miNationalrot",
-  "short_name": "miNationalrot",
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "id": "com.google.samples.apps.iosched"
-    }
-  ],
+  //"name": "miNationalrot",
+  //"short_name": "miNationalrot",
+  //"prefer_related_applications": true,
+  //"related_applications": [
+  //  {
+  //    "platform": "play",
+  //    "id": "com.google.samples.apps.iosched"
+  //  }
+  //],
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
