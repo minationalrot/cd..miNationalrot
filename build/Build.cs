@@ -6,6 +6,7 @@ using Nuke.Common.Git;
 using Nuke.Common.ProjectModel;
 using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
+using Nuke.Common.Tools.Git;
 using Nuke.Common.Tools.GitVersion;
 using Nuke.Common.Utilities.Collections;
 using static Nuke.Common.EnvironmentInfo;
@@ -23,7 +24,7 @@ class Build : NukeBuild
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
 
-    public static int Main () => Execute<Build>(x => x.Compile);
+    public static int Main () => Execute<Build>(x => x.PushGhPages);
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
@@ -36,12 +37,17 @@ class Build : NukeBuild
     AbsolutePath TestsDirectory => RootDirectory / "tests";
     AbsolutePath OutputDirectory => RootDirectory / "output";
 
+    AbsolutePath PublishDirectory => RootDirectory / "../publish";
+
+    AbsolutePath DistributionDirectory => PublishDirectory / @"miNationalrot" / @"dist";
+
     Target Clean => _ => _
         .Before(Restore)
         .Executes(() =>
         {
             SourceDirectory.GlobDirectories("**/bin", "**/obj").ForEach(DeleteDirectory);
             TestsDirectory.GlobDirectories("**/bin", "**/obj").ForEach(DeleteDirectory);
+            EnsureCleanDirectory(PublishDirectory);
             EnsureCleanDirectory(OutputDirectory);
         });
 
@@ -63,6 +69,69 @@ class Build : NukeBuild
                 .SetFileVersion(GitVersion.GetNormalizedFileVersion())
                 .SetInformationalVersion(GitVersion.InformationalVersion)
                 .EnableNoRestore());
+        });
+
+    Target Publish => _ => _
+        .DependsOn(Clean)
+        .DependsOn(Compile)
+        .Executes(() =>
+        {
+            DotNetPublish( s=>s
+                .SetConfiguration("Release")
+                .SetOutput(PublishDirectory)
+                .SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
+                .SetFileVersion(GitVersion.GetNormalizedFileVersion())
+                .SetInformationalVersion(GitVersion.InformationalVersion)
+            //.SetNoBuild(true)
+            );
+            //DotNetBuild(s => s
+            //    .SetProjectFile(Solution)
+            //    .SetConfiguration(Configuration)
+            //    .SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
+            //    .SetFileVersion(GitVersion.GetNormalizedFileVersion())
+            //    .SetInformationalVersion(GitVersion.InformationalVersion)
+            //    .EnableNoRestore());
+        });
+
+
+    Target PushGhPages => _ => _
+        .DependsOn(Publish)
+        .Executes(() =>
+        {
+            GitTasks.Git("init", DistributionDirectory);
+            GitTasks.Git("checkout -b gh-pages", DistributionDirectory);
+            GitTasks.Git("add -A", DistributionDirectory);
+            GitTasks.Git($"commit -m \"commit ver {GitVersion.FullSemVer}\"", DistributionDirectory);
+            GitTasks.Git("push -f  https://github.com/minationalrot/miNationalrot.git gh-pages", DistributionDirectory);
+
+            //GitRepository.
+
+            //echo % PAT %
+            //    echo % FL %
+            //    git config--global user.name "$NAME"
+            //git config --global user.email "$EMAIL"
+            //cd $(build.artifactstagingdirectory) / minationalrot / dist
+            //git init
+            //git checkout -b gh - pages
+            //git add -A
+            //git commit -m "Create build $(Build.BuildId)"
+            //rem git push - f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
+            //git push -f https://%PAT%@github.com/minationalrot/miNationalrot.git gh-pages
+            //displayName: 'Publish to GitHub Pages'
+            //env:
+            //PAT: $(github_pat2)
+            //    FL: $(Flag)
+            //    NAME: RemoOser
+            //EMAIL: remo.oser @osisa.com
+
+
+            //DotNetBuild(s => s
+            //    .SetProjectFile(Solution)
+            //    .SetConfiguration(Configuration)
+            //    .SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
+            //    .SetFileVersion(GitVersion.GetNormalizedFileVersion())
+            //    .SetInformationalVersion(GitVersion.InformationalVersion)
+            //    .EnableNoRestore());
         });
 
 }
