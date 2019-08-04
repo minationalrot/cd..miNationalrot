@@ -30,7 +30,7 @@ stages:
       displayName: 'Install Nuke'
       inputs:
         script: |
-          dotnet tool install --global Nuke.GlobalTool --version 0.12.3
+          dotnet tool install --global Nuke.GlobalTool
 
 
     - task: CmdLine@2
