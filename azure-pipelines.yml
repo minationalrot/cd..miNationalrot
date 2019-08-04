@@ -17,7 +17,8 @@ variables:
     value: '0.0.0.0'
       
 stages:
-- stage: 'Build By Nuke'    
+- stage: 'Build'    
+  displayName: 'Build by Nuke'
   jobs:
   - job: DotNetBuild
     pool:
