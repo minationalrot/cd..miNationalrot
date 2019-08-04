@@ -58,6 +58,13 @@ class Build : NukeBuild
                 .SetProjectFile(Solution));
         });
 
+    Target Test => _ => _
+        .DependsOn(Compile)
+        .Executes(() =>
+        {
+            DotNetTest();
+        });
+
     Target Compile => _ => _
         .DependsOn(Restore)
         .Executes(() =>
@@ -73,24 +80,18 @@ class Build : NukeBuild
 
     Target Publish => _ => _
         .DependsOn(Clean)
-        .DependsOn(Compile)
+        .DependsOn(Test)
         .Executes(() =>
         {
             DotNetPublish( s=>s
                 .SetConfiguration("Release")
                 .SetOutput(PublishDirectory)
-                .SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
+                //.SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
+                .SetAssemblyVersion(GitVersion.FullSemVer.Replace("+","."))
                 .SetFileVersion(GitVersion.GetNormalizedFileVersion())
                 .SetInformationalVersion(GitVersion.InformationalVersion)
-            //.SetNoBuild(true)
+                //.SetNoBuild(true)
             );
-            //DotNetBuild(s => s
-            //    .SetProjectFile(Solution)
-            //    .SetConfiguration(Configuration)
-            //    .SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
-            //    .SetFileVersion(GitVersion.GetNormalizedFileVersion())
-            //    .SetInformationalVersion(GitVersion.InformationalVersion)
-            //    .EnableNoRestore());
         });
 
 

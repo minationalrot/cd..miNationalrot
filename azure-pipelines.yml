@@ -17,7 +17,7 @@ variables:
     value: '0.0.0.0'
       
 stages:
-- stage: Build3    
+- stage: Build By Nuke    
   jobs:
   - job: DotNetBuild
     pool:
@@ -25,135 +25,15 @@ stages:
       name: Default
 
     steps:
-    - powershell: |
-        $buildNumber = $Env:BUILD_BUILDNUMBER
-        $revision=$buildNumber.Substring($buildNumber.LastIndexOf('.') + 1)
-        Write-Host "##vso[task.setvariable variable=Revision;]$revision"
-      displayName: Get Revision Number
-
-    - powershell: |
-        $version='{0}.{1}.{2}.{3}' -f $(VersionPrefix) , $(BuildYear) , $(BuildDate), $(Revision)
-        Write-Host "##vso[task.setvariable variable=VersionExt;]$version"
-      displayName: Get Version Number
-        
-    - task: UseDotNet@2
-      displayName: 'Use .NET Core sdk 3.0.100-preview7-012821'
+    - task: CmdLine@2
+      displayName: 'Install Nuke'
       inputs:
-        version: 3.0.100-preview7-012821
+        script: |
+          dotnet tool install --global Nuke.GlobalTool --version 0.12.3
 
-    - task: DotNetCoreCLI@2
-      displayName: Restore
+
+    - task: CmdLine@2
+      displayName: 'Run Nuke'
       inputs:
-        command: restore
-        projects: '$(SolutionFile)'
-
-    - task: DotNetCoreCLI@2
-      displayName: Build
-      inputs:
-        projects: '$(SolutionFile)'
-        arguments: '--configuration $(BuildConfiguration) /p:Version=$(VersionExt)'
-
-    - task: DotNetCoreCLI@2
-      displayName: Test
-      inputs:
-        command: test
-        projects: '$(Parameters.TestProjects)'
-        arguments: '--configuration $(BuildConfiguration)'
-
-    - task: DotNetCoreCLI@2
-      displayName: Publish
-      inputs:
-        command: publish
-        publishWebProjects: True
-        arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory) --no-build'
-
-    - task: PublishBuildArtifacts@1
-      displayName: 'Publish Artifact'
-      inputs:
-        PathtoPublish: '$(build.artifactstagingdirectory)'
-        artifactName: 'drop' 
-
-- stage: Deploy
-  jobs:
-   - job: GitHubPagesPush
-     pool:
-      #name: Hosted Windows 2019 with VS2019
-      name: Default
-
-     steps:
-      - task: DownloadBuildArtifacts@0
-        displayName: Download Build Artifacts to '$(System.ArtifactsDirectory)'
-        inputs:
-          artifactName: 'drop'
-          downloadPath: '$(System.ArtifactsDirectory)' 
-
-      - task: ExtractFiles@1
-        displayName: 'Extract files'
-        inputs:
-          archiveFilePatterns: '$(System.ArtifactsDirectory)\*.zip' 
-          destinationFolder: '$(build.artifactstagingdirectory)\disttmp'
-      
-      - checkout: self
-        persistCredentials: 'true'
-        
-      - powershell: |
-          $asmversion=[Reflection.AssemblyName]::GetAssemblyName("$(build.artifactstagingdirectory)\disttmp\miNationalrot\dist\_framework\_bin\minationalrot.dll").Version
-          Write-Host $asmversion
-          Write-Host "##vso[task.setvariable variable=VersionExt;]$asmversion"
-        
-      - script: |
-          echo %PAT%
-          echo %FL%
-          git config --global user.name "$NAME"
-          git config --global user.email "$EMAIL"
-          cd $(build.artifactstagingdirectory)/minationalrot/dist
-          git init
-          git checkout -b gh-pages
-          git add -A
-          git commit -m "Create build $(Build.BuildId)"
-          rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
-          git push -f https://%PAT%@github.com/minationalrot/miNationalrot.git gh-pages
-        displayName: 'Publish to GitHub Pages'
-        env:
-          PAT: $(github_pat2)
-          FL: $(Flag)
-          NAME: RemoOser
-          EMAIL: remo.oser@osisa.com
-        
-      # - script: |
-      #     git config --global user.name "$NAME"
-      #     git config --global user.email "$EMAIL"
-      #     cd $(build.artifactstagingdirectory)\disttmp\minationalrot\dist
-      #     git init
-      #     git checkout -b gh-pages
-      #     git add -A
-      #     git commit -m "Create build $(Build.BuildId)"
-      #     rem git push -f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
-      #     git push -f https://$PAT@github.com/minationalrot/miNationalrot.git gh-pages
-      #   displayName: 'Publish to GitHub Pages'
-      #   env:
-      #     PAT: $(github_pat)
-      #     NAME: RemoOser
-      #     EMAIL: remo.oser@osisa.com
-
-      # - script: |
-      #     echo "VersionExt:"
-      #     echo %VERSIONEXT%
-      #     git checkout gh-pages
-      #     git rm . -r
-      #     xcopy $(build.artifactstagingdirectory)\disttmp\minationalrot\dist $(System.DefaultWorkingDirectory)\ /s
-      #     git add .
-      #     git commit -m "Push force azure-deploy ***NO_CI*** %VERSIONEXT%"
-      #     git commit -m 'rebuild pages' --allow-empty
-      #     git push origin gh-pages
-      #   displayName: 'run git push gh-pages'
-
-      # - powershell: |
-      #     $url="https://api.github.com/repos/miNationalrot/miNationalrot/pages/builds"
-      #     $headers = @{}
-      #     $headers.Add("Authorization" , "Bearer $(github_pat)")
-      #     $headers.Add("Accept" , "application/vnd.github.mister-fantastic-preview+json" )
-      #     $method="POST"
-      #     $output = Invoke-RestMethod $url -Method $method -Headers $headers -ContentType "application/json" -Verbose
-      #     Write-Host $output
-      #   displayName: 'rebuild gh-pages'
+        script: |
+          nuke
