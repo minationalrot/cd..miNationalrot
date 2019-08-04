@@ -29,6 +29,7 @@ stages:
     - task: CmdLine@2
       displayName: 'Install Nuke'
       inputs:
+        failOnStderr: false
         script: |
           dotnet tool install --global Nuke.GlobalTool
 
