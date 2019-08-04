@@ -31,7 +31,7 @@ stages:
       inputs:
         failOnStderr: false
         script: |
-          cmd /c "dotnet tool install --global Nuke.GlobalTool"
+          dotnet tool install --global Nuke.GlobalTool>out.txt
 
 
     - task: CmdLine@2
