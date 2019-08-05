@@ -121,34 +121,6 @@ class Build : NukeBuild
                 GitTasks.Git($"push -f  https://{GitHub_PAT}@github.com/minationalrot/miNationalrot.git gh-pages", DistributionDirectory);
 
             }
-            //GitRepository.
-
-            //echo % PAT %
-            //    echo % FL %
-            //    git config--global user.name "$NAME"
-            //git config --global user.email "$EMAIL"
-            //cd $(build.artifactstagingdirectory) / minationalrot / dist
-            //git init
-            //git checkout -b gh - pages
-            //git add -A
-            //git commit -m "Create build $(Build.BuildId)"
-            //rem git push - f https://$PAT@github.com/fernandreu/blazor-pages.git gh-pages
-            //git push -f https://%PAT%@github.com/minationalrot/miNationalrot.git gh-pages
-            //displayName: 'Publish to GitHub Pages'
-            //env:
-            //PAT: $(github_pat2)
-            //    FL: $(Flag)
-            //    NAME: RemoOser
-            //EMAIL: remo.oser @osisa.com
-
-
-            //DotNetBuild(s => s
-            //    .SetProjectFile(Solution)
-            //    .SetConfiguration(Configuration)
-            //    .SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
-            //    .SetFileVersion(GitVersion.GetNormalizedFileVersion())
-            //    .SetInformationalVersion(GitVersion.InformationalVersion)
-            //    .EnableNoRestore());
         });
 
 }

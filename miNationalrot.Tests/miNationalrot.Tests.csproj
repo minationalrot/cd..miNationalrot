@@ -5,4 +5,8 @@
   </PropertyGroup>
 
   <Import Project="..\Test.Build.props" />
+
+  <ItemGroup>
+    <PackageReference Include="lighthouse.net" Version="1.0.2" />
+  </ItemGroup>
 </Project>
