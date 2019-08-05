@@ -34,7 +34,7 @@ class Build : NukeBuild
     [GitVersion] readonly GitVersion GitVersion;
 
     AbsolutePath SourceDirectory => RootDirectory / "src";
-    AbsolutePath TestsDirectory => RootDirectory / "tests";
+    AbsolutePath TestsDirectory => RootDirectory / "nuketests";
     AbsolutePath OutputDirectory => RootDirectory / "output";
 
     AbsolutePath PublishDirectory => RootDirectory / "../publish";
