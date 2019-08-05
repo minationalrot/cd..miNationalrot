@@ -30,8 +30,13 @@ stages:
         $m = dotnet tool list --global | Where {$_.StartsWith("nuke.globaltool")}
         $m.Count
         If ($m.Count -eq '0') 
-        { 
+        {  
+          Write-Host 'Installing Nuke tool...'
           dotnet tool install -g Nuke.GlobalTool 
+        }
+        else
+        {
+          Write-Host 'Nuke tool already installed.'
         }
 
     - task: CmdLine@2
