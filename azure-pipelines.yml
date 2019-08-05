@@ -41,6 +41,6 @@ stages:
 
     - script: |
           nuke -GitHub_PAT $PAT
-
-          env:
-            PAT: $(github_pat2)
+      displayName: 'Publish to GitHub Pages'
+      env:
+         PAT: $(github_pat2)
