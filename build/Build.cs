@@ -112,7 +112,7 @@ class Build : NukeBuild
             }
             else
             {
-                GitTasks.Git("config --", DistributionDirectory);
+                //GitTasks.Git("config --", DistributionDirectory);
                 GitTasks.Git("init", DistributionDirectory);
 
                 GitTasks.Git("checkout -b gh-pages", DistributionDirectory);
