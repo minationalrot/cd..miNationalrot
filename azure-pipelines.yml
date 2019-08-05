@@ -28,7 +28,7 @@ stages:
     steps:
     - powershell: |
         $m = dotnet tool list --global | Where {$_.StartsWith("nuke.globaltool")}
-        if ($m.Count eq 0) { dotnet tool install -g Nuke.GlobalTool }
+        if ($m.Count==0) { dotnet tool install -g Nuke.GlobalTool }
 
     - task: CmdLine@2
       displayName: 'Run Nuke'
