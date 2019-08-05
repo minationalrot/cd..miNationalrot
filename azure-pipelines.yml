@@ -39,8 +39,8 @@ stages:
           Write-Host 'Nuke tool already installed.'
         }
 
-    - task: CmdLine@2
-      displayName: 'Run Nuke'
-      inputs:
-        script: |
-          nuke
+    - script: |
+          nuke -GitHub_PAT $PAT
+
+          env:
+            PAT: $(github_pat2)

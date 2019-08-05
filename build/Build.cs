@@ -33,6 +33,8 @@ class Build : NukeBuild
     [GitRepository] readonly GitRepository GitRepository;
     [GitVersion] readonly GitVersion GitVersion;
 
+    [Parameter] string GitHub_PAT;
+
     AbsolutePath SourceDirectory => RootDirectory / "src";
     AbsolutePath TestsDirectory => RootDirectory / "nuketests";
     AbsolutePath OutputDirectory => RootDirectory / "output";
@@ -100,12 +102,23 @@ class Build : NukeBuild
         .DependsOn(Publish)
         .Executes(() =>
         {
-            GitTasks.Git("init", DistributionDirectory);
-            GitTasks.Git("checkout -b gh-pages", DistributionDirectory);
-            GitTasks.Git("add -A", DistributionDirectory);
-            GitTasks.Git($"commit -m \"commit ver {GitVersion.FullSemVer}\"", DistributionDirectory);
-            GitTasks.Git("push -f  https://github.com/minationalrot/miNationalrot.git gh-pages", DistributionDirectory);
+            if (GitHub_PAT == null)
+            {
+                GitTasks.Git("init", DistributionDirectory);
+                GitTasks.Git("checkout -b gh-pages", DistributionDirectory);
+                GitTasks.Git("add -A", DistributionDirectory);
+                GitTasks.Git($"commit -m \"commit ver {GitVersion.FullSemVer}\"", DistributionDirectory);
+                GitTasks.Git("push -f  https://github.com/minationalrot/miNationalrot.git gh-pages", DistributionDirectory);
+            }
+            else
+            {
+                GitTasks.Git("init", DistributionDirectory);
+                GitTasks.Git("checkout -b gh-pages", DistributionDirectory);
+                GitTasks.Git("add -A", DistributionDirectory);
+                GitTasks.Git($"commit -m \"commit ver {GitVersion.FullSemVer}\"", DistributionDirectory);
+                GitTasks.Git($"push -f  https://{GitHub_PAT}@github.com/minationalrot/miNationalrot.git gh-pages", DistributionDirectory);
 
+            }
             //GitRepository.
 
             //echo % PAT %
