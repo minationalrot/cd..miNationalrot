@@ -29,7 +29,7 @@ stages:
     - powershell: |
         $m = dotnet tool list --global | Where {$_.StartsWith("nuke.globaltool")}
         $m.Count
-        If ($m.Count eq 0) 
+        If ($m.Count -eq '0') 
         { 
           dotnet tool install -g Nuke.GlobalTool 
         }
