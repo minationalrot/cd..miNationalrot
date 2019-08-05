@@ -112,9 +112,9 @@ class Build : NukeBuild
             }
             else
             {
-                //GitTasks.Git("config --", DistributionDirectory);
+                GitTasks.Git(@"config --global user.name OserRemo", DistributionDirectory);
+                GitTasks.Git(@"config --global user.email remo.oser@osisa.com", DistributionDirectory);
                 GitTasks.Git("init", DistributionDirectory);
-
                 GitTasks.Git("checkout -b gh-pages", DistributionDirectory);
                 GitTasks.Git("add -A", DistributionDirectory);
                 GitTasks.Git($"commit -m \"commit ver {GitVersion.FullSemVer}\"", DistributionDirectory);
