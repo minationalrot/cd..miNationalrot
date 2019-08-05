@@ -47,6 +47,7 @@ class Build : NukeBuild
         {
             SourceDirectory.GlobDirectories("**/bin", "**/obj").ForEach(DeleteDirectory);
             TestsDirectory.GlobDirectories("**/bin", "**/obj").ForEach(DeleteDirectory);
+            EnsureCleanDirectory(TestsDirectory);
             EnsureCleanDirectory(PublishDirectory);
             EnsureCleanDirectory(OutputDirectory);
         });
@@ -62,7 +63,7 @@ class Build : NukeBuild
         .DependsOn(Compile)
         .Executes(() =>
         {
-            DotNetTest();
+            DotNetTest(s=>s.SetOutput(TestsDirectory));
         });
 
     Target Compile => _ => _
