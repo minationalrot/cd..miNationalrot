@@ -26,13 +26,12 @@ stages:
       name: Default
 
     steps:
-    - task: CmdLine@2
-      displayName: 'Install Nuke'
-      inputs:
-        failOnStderr: false
-        script: |
-          dotnet tool install --global Nuke.GlobalTool>out.txt
-
+    - powershell: |
+        $m = dotnet tool list --global | Where {$_.StartsWith("nuke.globaltool")}
+        if ($m.Count == 0) 
+        {
+            dotnet tool install -g Nuke.GlobalTool
+        }
 
     - task: CmdLine@2
       displayName: 'Run Nuke'
