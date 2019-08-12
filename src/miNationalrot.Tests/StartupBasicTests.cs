@@ -11,7 +11,6 @@ using FluentAssertions;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-
 namespace miNationalrot.Tests
 {
     [TestClass]
@@ -29,6 +28,7 @@ namespace miNationalrot.Tests
 
             // assert
             response.StatusCode.Should().Be(HttpStatusCode.OK);
+
             var content = response.Content.ReadAsStringAsync().Result;
             content.Should().Contain(@"<!DOCTYPE html>");
         }
