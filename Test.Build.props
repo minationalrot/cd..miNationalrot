@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
       <IsTestProject>true</IsTestProject>
-      <MicrosoftNETTestSdkVersion>16.3.0-preview-20190715-02</MicrosoftNETTestSdkVersion>
+      <MicrosoftNETTestSdkVersion>16.3.0-preview-20190808-03</MicrosoftNETTestSdkVersion>
       <MSTestTestAdapterVersion>2.0.0-beta4</MSTestTestAdapterVersion>
       <MSTestTestFrameworkVersion>2.0.0-beta4</MSTestTestFrameworkVersion>
   </PropertyGroup>

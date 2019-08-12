@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!--<PreserveCompilationContext>true</PreserveCompilationContext>
+    <GenerateDependencyFile>true</GenerateDependencyFile>
+    <PublishWithAspNetCoreTargetManifest>true</PublishWithAspNetCoreTargetManifest>
+    <ReferenceOutputAssembly>true</ReferenceOutputAssembly>-->
+    <!--<PublishTrimmed>true</PublishTrimmed>-->
+  </PropertyGroup>
+
+  <Import Project="..\..\Test.Build.props" />
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="CustomWebApplicationFactory.cs" />
+    <Compile Remove="StartupClientSide.cs" />
+    <Compile Remove="wf2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="lighthouse.net" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.0.0-preview7.19365.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview7.19365.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="3.0.0-preview7.19362.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.0.0-preview7.19365.7" />
+
+
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Server" Version="3.0.0-preview7.19365.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0-preview7.19365.7" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\miNationalrot\miNationalrot.csproj" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <ProjectReference Include="..\miNationalrot\miNationalrot.csproj" PrivateAssets="All" />
+  </ItemGroup>-->
+</Project>

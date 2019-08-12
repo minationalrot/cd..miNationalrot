@@ -1,4 +1,5 @@
 
+
 using Microsoft.AspNetCore.Components.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -8,7 +9,7 @@ namespace miNationalrot
 {
     public class Startup
     {
-        public void ConfigureServices(IServiceCollection services)
+        public virtual void ConfigureServices(IServiceCollection services)
         {
         }
 

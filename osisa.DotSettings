@@ -1,0 +1,2249 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/CodeEditing/GenerateMemberBody/CopyXmlDocumentation/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeEditing/Intellisense/CodeCompletion/AutoCompleteBasicCompletion/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeEditing/Intellisense/CodeCompletion/IntelliSenseCompletingCharacters/CSharpCompletingCharacters/UpgradedFromVSSettings/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/CodeAnnotations/NamespacesWithAnnotations/=osisa_002EBuild_002EAnnotations/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeInspection/CodeAnnotations/NamespacesWithAnnotations/=osisa_002ECommon_002ETests_002EAnnotations/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeInspection/GeneratedCode/GeneratedFileMasks/=_002A_002Eg_002Ecs/@EntryIndexedValue">*.g.cs</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/AnalysisEnabled/@EntryValue">SOLUTION</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ArrangeThisQualifier/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=ImplicitlyCapturedClosure/@EntryIndexedValue">HINT</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=NotResolvedInText/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=RedundantIfElseBlock/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/InspectionSeverities/=StyleCop_002ESA1200/@EntryIndexedValue">DO_NOT_SHOW</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022ClassCanBeSealed_002EGlobal_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022ClassCanBeSealed_002ELocal_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022ConvertIfStatementToReturnStatement_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022ConvertIfStatementToSwitchStatement_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022ConvertToAutoPropertyWithPrivateSetter_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022InvertIf_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022LoopCanBePartlyConvertedToQuery_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022MemberCanBeInternal_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022MemberCanBeMadeStatic_002EGlobal_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022MemberCanBeMadeStatic_002ELocal_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022RedundantArgumentNameForLiteralExpression_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022RedundantToStringCallForValueType_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022SimilarAnonymousTypeNearby_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022SuggestBaseTypeForParameter_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022SuggestUseVarKeywordEverywhere_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022TryStatementsCanBeMerged_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022UnknownCssVendorExtension_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CConfigurableSeverity_0020Id_003D_0022Xaml_002EBindingWithoutContextReferenceNotResolvedHighlighting_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeInspection/Highlighting/CodeIssueFilter/IssueTypesToHide/=_003CStaticSeverity_0020Severity_003D_00222_0022_0020Title_003D_0022Structural_0020Search_0020Hints_0022_0020GroupId_003D_0022StructuralSearch_0022_0020_002F_003E/@EntryIndexedValue">DoHide</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/Profiles/=osisa/@EntryIndexedValue">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Profile name="osisa"&gt;&lt;CSUpdateFileHeader&gt;True&lt;/CSUpdateFileHeader&gt;&lt;CSOptimizeUsings&gt;&lt;OptimizeUsings&gt;True&lt;/OptimizeUsings&gt;&lt;EmbraceInRegion&gt;False&lt;/EmbraceInRegion&gt;&lt;RegionName&gt;&lt;/RegionName&gt;&lt;/CSOptimizeUsings&gt;&lt;CSArrangeThisQualifier&gt;True&lt;/CSArrangeThisQualifier&gt;&lt;CSReorderTypeMembers&gt;True&lt;/CSReorderTypeMembers&gt;&lt;VBOptimizeImports&gt;True&lt;/VBOptimizeImports&gt;&lt;VBShortenReferences&gt;True&lt;/VBShortenReferences&gt;&lt;VBReformatCode&gt;True&lt;/VBReformatCode&gt;&lt;VBFormatDocComments&gt;True&lt;/VBFormatDocComments&gt;&lt;CSharpFormatDocComments&gt;True&lt;/CSharpFormatDocComments&gt;&lt;CSReformatCode&gt;True&lt;/CSReformatCode&gt;&lt;CSShortenReferences&gt;True&lt;/CSShortenReferences&gt;&lt;CreateXmlDocStubs&gt;True&lt;/CreateXmlDocStubs&gt;&lt;/Profile&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/Profiles/=RocheSettings/@EntryIndexedValue">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Profile name="RocheSettings"&gt;&lt;AspOptimizeRegisterDirectives&gt;False&lt;/AspOptimizeRegisterDirectives&gt;&lt;HtmlReformatCode&gt;False&lt;/HtmlReformatCode&gt;&lt;CSArrangeThisQualifier&gt;True&lt;/CSArrangeThisQualifier&gt;&lt;CSRemoveCodeRedundancies&gt;False&lt;/CSRemoveCodeRedundancies&gt;&lt;CSUseAutoProperty&gt;True&lt;/CSUseAutoProperty&gt;&lt;CSMakeFieldReadonly&gt;True&lt;/CSMakeFieldReadonly&gt;&lt;CSUseVar&gt;&lt;BehavourStyle&gt;CAN_CHANGE_BOTH&lt;/BehavourStyle&gt;&lt;LocalVariableStyle&gt;ALWAYS_IMPLICIT&lt;/LocalVariableStyle&gt;&lt;ForeachVariableStyle&gt;ALWAYS_EXPLICIT&lt;/ForeachVariableStyle&gt;&lt;/CSUseVar&gt;&lt;CSUpdateFileHeader&gt;True&lt;/CSUpdateFileHeader&gt;&lt;VBOptimizeImports&gt;False&lt;/VBOptimizeImports&gt;&lt;VBShortenReferences&gt;False&lt;/VBShortenReferences&gt;&lt;JsInsertSemicolon&gt;True&lt;/JsInsertSemicolon&gt;&lt;JsReformatCode&gt;False&lt;/JsReformatCode&gt;&lt;CssReformatCode&gt;False&lt;/CssReformatCode&gt;&lt;XMLReformatCode&gt;False&lt;/XMLReformatCode&gt;&lt;CSOptimizeUsings&gt;&lt;OptimizeUsings&gt;False&lt;/OptimizeUsings&gt;&lt;EmbraceInRegion&gt;False&lt;/EmbraceInRegion&gt;&lt;RegionName&gt;&lt;/RegionName&gt;&lt;/CSOptimizeUsings&gt;&lt;CSShortenReferences&gt;True&lt;/CSShortenReferences&gt;&lt;VBReformatCode&gt;False&lt;/VBReformatCode&gt;&lt;CSReformatCode&gt;True&lt;/CSReformatCode&gt;&lt;CSharpFormatDocComments&gt;False&lt;/CSharpFormatDocComments&gt;&lt;CSReorderTypeMembers&gt;True&lt;/CSReorderTypeMembers&gt;&lt;StyleCop.Documentation&gt;&lt;SA1600ElementsMustBeDocumented&gt;True&lt;/SA1600ElementsMustBeDocumented&gt;&lt;SA1604ElementDocumentationMustHaveSummary&gt;True&lt;/SA1604ElementDocumentationMustHaveSummary&gt;&lt;SA1609PropertyDocumentationMustHaveValueDocumented&gt;True&lt;/SA1609PropertyDocumentationMustHaveValueDocumented&gt;&lt;SA1611ElementParametersMustBeDocumented&gt;True&lt;/SA1611ElementParametersMustBeDocumented&gt;&lt;SA1615ElementReturnValueMustBeDocumented&gt;True&lt;/SA1615ElementReturnValueMustBeDocumented&gt;&lt;SA1617VoidReturnValueMustNotBeDocumented&gt;True&lt;/SA1617VoidReturnValueMustNotBeDocumented&gt;&lt;SA1618GenericTypeParametersMustBeDocumented&gt;True&lt;/SA1618GenericTypeParametersMustBeDocumented&gt;&lt;SA1626SingleLineCommentsMustNotUseDocumentationStyleSlashes&gt;True&lt;/SA1626SingleLineCommentsMustNotUseDocumentationStyleSlashes&gt;&lt;SA1628DocumentationTextMustBeginWithACapitalLetter&gt;True&lt;/SA1628DocumentationTextMustBeginWithACapitalLetter&gt;&lt;SA1629DocumentationTextMustEndWithAPeriod&gt;True&lt;/SA1629DocumentationTextMustEndWithAPeriod&gt;&lt;SA1633SA1641UpdateFileHeader&gt;InsertMissing&lt;/SA1633SA1641UpdateFileHeader&gt;&lt;SA1639FileHeaderMustHaveSummary&gt;False&lt;/SA1639FileHeaderMustHaveSummary&gt;&lt;SA1642ConstructorSummaryDocumentationMustBeginWithStandardText&gt;True&lt;/SA1642ConstructorSummaryDocumentationMustBeginWithStandardText&gt;&lt;SA1643DestructorSummaryDocumentationMustBeginWithStandardText&gt;True&lt;/SA1643DestructorSummaryDocumentationMustBeginWithStandardText&gt;&lt;SA1644DocumentationHeadersMustNotContainBlankLines&gt;True&lt;/SA1644DocumentationHeadersMustNotContainBlankLines&gt;&lt;/StyleCop.Documentation&gt;&lt;StyleCop.Layout&gt;&lt;SA1500CurlyBracketsForMultiLineStatementsMustNotShareLine&gt;False&lt;/SA1500CurlyBracketsForMultiLineStatementsMustNotShareLine&gt;&lt;SA1509OpeningCurlyBracketsMustNotBePrecededByBlankLine&gt;False&lt;/SA1509OpeningCurlyBracketsMustNotBePrecededByBlankLine&gt;&lt;SA1510ChainedStatementBlocksMustNotBePrecededByBlankLine&gt;True&lt;/SA1510ChainedStatementBlocksMustNotBePrecededByBlankLine&gt;&lt;SA1511WhileDoFooterMustNotBePrecededByBlankLine&gt;True&lt;/SA1511WhileDoFooterMustNotBePrecededByBlankLine&gt;&lt;SA1512SingleLineCommentsMustNotBeFollowedByBlankLine&gt;False&lt;/SA1512SingleLineCommentsMustNotBeFollowedByBlankLine&gt;&lt;SA1513ClosingCurlyBracketMustBeFollowedByBlankLine&gt;False&lt;/SA1513ClosingCurlyBracketMustBeFollowedByBlankLine&gt;&lt;SA1514ElementDocumentationHeaderMustBePrecededByBlankLine&gt;False&lt;/SA1514ElementDocumentationHeaderMustBePrecededByBlankLine&gt;&lt;SA1515SingleLineCommentMustBeProceededByBlankLine&gt;False&lt;/SA1515SingleLineCommentMustBeProceededByBlankLine&gt;&lt;/StyleCop.Layout&gt;&lt;StyleCop.Maintainability&gt;&lt;SA1119StatementMustNotUseUnnecessaryParenthesis&gt;True&lt;/SA1119StatementMustNotUseUnnecessaryParenthesis&gt;&lt;/StyleCop.Maintainability&gt;&lt;StyleCop.Ordering&gt;&lt;AlphabeticalUsingDirectives&gt;Ignore&lt;/AlphabeticalUsingDirectives&gt;&lt;ExpandUsingDirectives&gt;FullyQualify&lt;/ExpandUsingDirectives&gt;&lt;SA1212PropertyAccessorsMustFollowOrder&gt;True&lt;/SA1212PropertyAccessorsMustFollowOrder&gt;&lt;SA1213EventAccessorsMustFollowOrder&gt;True&lt;/SA1213EventAccessorsMustFollowOrder&gt;&lt;/StyleCop.Ordering&gt;&lt;StyleCop.Readability&gt;&lt;SA1100DoNotPrefixCallsWithBaseUnlessLocalImplementationExists&gt;True&lt;/SA1100DoNotPrefixCallsWithBaseUnlessLocalImplementationExists&gt;&lt;SA1106CodeMustNotContainEmptyStatements&gt;True&lt;/SA1106CodeMustNotContainEmptyStatements&gt;&lt;SA1108BlockStatementsMustNotContainEmbeddedComments&gt;True&lt;/SA1108BlockStatementsMustNotContainEmbeddedComments&gt;&lt;SA1109BlockStatementsMustNotContainEmbeddedRegions&gt;True&lt;/SA1109BlockStatementsMustNotContainEmbeddedRegions&gt;&lt;SA1120CommentsMustContainText&gt;True&lt;/SA1120CommentsMustContainText&gt;&lt;SA1121UseBuiltInTypeAlias&gt;True&lt;/SA1121UseBuiltInTypeAlias&gt;&lt;SA1122UseStringEmptyForEmptyStrings&gt;True&lt;/SA1122UseStringEmptyForEmptyStrings&gt;&lt;SA1123DoNotPlaceRegionsWithinElements&gt;True&lt;/SA1123DoNotPlaceRegionsWithinElements&gt;&lt;SA1124CodeMustNotContainEmptyRegions&gt;True&lt;/SA1124CodeMustNotContainEmptyRegions&gt;&lt;/StyleCop.Readability&gt;&lt;StyleCop.Spacing&gt;&lt;SA1001CommasMustBeSpacedCorrectly&gt;True&lt;/SA1001CommasMustBeSpacedCorrectly&gt;&lt;SA1005SingleLineCommentsMustBeginWithSingleSpace&gt;True&lt;/SA1005SingleLineCommentsMustBeginWithSingleSpace&gt;&lt;SA1006PreprocessorKeywordsMustNotBePrecededBySpace&gt;True&lt;/SA1006PreprocessorKeywordsMustNotBePrecededBySpace&gt;&lt;SA1021NegativeSignsMustBeSpacedCorrectly&gt;True&lt;/SA1021NegativeSignsMustBeSpacedCorrectly&gt;&lt;SA1022PositiveSignsMustBeSpacedCorrectly&gt;True&lt;/SA1022PositiveSignsMustBeSpacedCorrectly&gt;&lt;SA1025CodeMustNotContainMultipleWhitespaceInARow&gt;True&lt;/SA1025CodeMustNotContainMultipleWhitespaceInARow&gt;&lt;/StyleCop.Spacing&gt;&lt;/Profile&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/Profiles/=StyleCop/@EntryIndexedValue">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Profile name="StyleCop"&gt;&lt;CSArrangeThisQualifier&gt;True&lt;/CSArrangeThisQualifier&gt;&lt;CSOptimizeUsings&gt;&lt;OptimizeUsings&gt;True&lt;/OptimizeUsings&gt;&lt;EmbraceInRegion&gt;False&lt;/EmbraceInRegion&gt;&lt;RegionName&gt;&lt;/RegionName&gt;&lt;/CSOptimizeUsings&gt;&lt;CSReformatCode&gt;True&lt;/CSReformatCode&gt;&lt;CSReorderTypeMembers&gt;True&lt;/CSReorderTypeMembers&gt;&lt;StyleCop.Documentation&gt;&lt;SA1600ElementsMustBeDocumented&gt;True&lt;/SA1600ElementsMustBeDocumented&gt;&lt;SA1604ElementDocumentationMustHaveSummary&gt;True&lt;/SA1604ElementDocumentationMustHaveSummary&gt;&lt;SA1609PropertyDocumentationMustHaveValueDocumented&gt;True&lt;/SA1609PropertyDocumentationMustHaveValueDocumented&gt;&lt;SA1611ElementParametersMustBeDocumented&gt;True&lt;/SA1611ElementParametersMustBeDocumented&gt;&lt;SA1615ElementReturnValueMustBeDocumented&gt;True&lt;/SA1615ElementReturnValueMustBeDocumented&gt;&lt;SA1617VoidReturnValueMustNotBeDocumented&gt;True&lt;/SA1617VoidReturnValueMustNotBeDocumented&gt;&lt;SA1618GenericTypeParametersMustBeDocumented&gt;True&lt;/SA1618GenericTypeParametersMustBeDocumented&gt;&lt;SA1626SingleLineCommentsMustNotUseDocumentationStyleSlashes&gt;True&lt;/SA1626SingleLineCommentsMustNotUseDocumentationStyleSlashes&gt;&lt;SA1628DocumentationTextMustBeginWithACapitalLetter&gt;True&lt;/SA1628DocumentationTextMustBeginWithACapitalLetter&gt;&lt;SA1629DocumentationTextMustEndWithAPeriod&gt;True&lt;/SA1629DocumentationTextMustEndWithAPeriod&gt;&lt;SA1633SA1641UpdateFileHeader&gt;ReplaceCopyrightElement&lt;/SA1633SA1641UpdateFileHeader&gt;&lt;SA1639FileHeaderMustHaveSummary&gt;True&lt;/SA1639FileHeaderMustHaveSummary&gt;&lt;SA1642ConstructorSummaryDocumentationMustBeginWithStandardText&gt;True&lt;/SA1642ConstructorSummaryDocumentationMustBeginWithStandardText&gt;&lt;SA1643DestructorSummaryDocumentationMustBeginWithStandardText&gt;True&lt;/SA1643DestructorSummaryDocumentationMustBeginWithStandardText&gt;&lt;SA1644DocumentationHeadersMustNotContainBlankLines&gt;True&lt;/SA1644DocumentationHeadersMustNotContainBlankLines&gt;&lt;/StyleCop.Documentation&gt;&lt;StyleCop.Layout&gt;&lt;SA1500CurlyBracketsForMultiLineStatementsMustNotShareLine&gt;True&lt;/SA1500CurlyBracketsForMultiLineStatementsMustNotShareLine&gt;&lt;SA1509OpeningCurlyBracketsMustNotBePrecededByBlankLine&gt;True&lt;/SA1509OpeningCurlyBracketsMustNotBePrecededByBlankLine&gt;&lt;SA1510ChainedStatementBlocksMustNotBePrecededByBlankLine&gt;True&lt;/SA1510ChainedStatementBlocksMustNotBePrecededByBlankLine&gt;&lt;SA1511WhileDoFooterMustNotBePrecededByBlankLine&gt;True&lt;/SA1511WhileDoFooterMustNotBePrecededByBlankLine&gt;&lt;SA1512SingleLineCommentsMustNotBeFollowedByBlankLine&gt;True&lt;/SA1512SingleLineCommentsMustNotBeFollowedByBlankLine&gt;&lt;SA1513ClosingCurlyBracketMustBeFollowedByBlankLine&gt;True&lt;/SA1513ClosingCurlyBracketMustBeFollowedByBlankLine&gt;&lt;SA1514ElementDocumentationHeaderMustBePrecededByBlankLine&gt;True&lt;/SA1514ElementDocumentationHeaderMustBePrecededByBlankLine&gt;&lt;SA1515SingleLineCommentMustBeProceededByBlankLine&gt;True&lt;/SA1515SingleLineCommentMustBeProceededByBlankLine&gt;&lt;/StyleCop.Layout&gt;&lt;StyleCop.Maintainability&gt;&lt;SA1119StatementMustNotUseUnnecessaryParenthesis&gt;True&lt;/SA1119StatementMustNotUseUnnecessaryParenthesis&gt;&lt;/StyleCop.Maintainability&gt;&lt;StyleCop.Ordering&gt;&lt;AlphabeticalUsingDirectives&gt;Alphabetical&lt;/AlphabeticalUsingDirectives&gt;&lt;ExpandUsingDirectives&gt;FullyQualify&lt;/ExpandUsingDirectives&gt;&lt;SA1212PropertyAccessorsMustFollowOrder&gt;True&lt;/SA1212PropertyAccessorsMustFollowOrder&gt;&lt;SA1213EventAccessorsMustFollowOrder&gt;True&lt;/SA1213EventAccessorsMustFollowOrder&gt;&lt;/StyleCop.Ordering&gt;&lt;StyleCop.Readability&gt;&lt;SA1100DoNotPrefixCallsWithBaseUnlessLocalImplementationExists&gt;True&lt;/SA1100DoNotPrefixCallsWithBaseUnlessLocalImplementationExists&gt;&lt;SA1106CodeMustNotContainEmptyStatements&gt;True&lt;/SA1106CodeMustNotContainEmptyStatements&gt;&lt;SA1108BlockStatementsMustNotContainEmbeddedComments&gt;True&lt;/SA1108BlockStatementsMustNotContainEmbeddedComments&gt;&lt;SA1109BlockStatementsMustNotContainEmbeddedRegions&gt;True&lt;/SA1109BlockStatementsMustNotContainEmbeddedRegions&gt;&lt;SA1120CommentsMustContainText&gt;True&lt;/SA1120CommentsMustContainText&gt;&lt;SA1121UseBuiltInTypeAlias&gt;True&lt;/SA1121UseBuiltInTypeAlias&gt;&lt;SA1122UseStringEmptyForEmptyStrings&gt;True&lt;/SA1122UseStringEmptyForEmptyStrings&gt;&lt;SA1123DoNotPlaceRegionsWithinElements&gt;True&lt;/SA1123DoNotPlaceRegionsWithinElements&gt;&lt;SA1124CodeMustNotContainEmptyRegions&gt;True&lt;/SA1124CodeMustNotContainEmptyRegions&gt;&lt;/StyleCop.Readability&gt;&lt;StyleCop.Spacing&gt;&lt;SA1001CommasMustBeSpacedCorrectly&gt;True&lt;/SA1001CommasMustBeSpacedCorrectly&gt;&lt;SA1005SingleLineCommentsMustBeginWithSingleSpace&gt;True&lt;/SA1005SingleLineCommentsMustBeginWithSingleSpace&gt;&lt;SA1006PreprocessorKeywordsMustNotBePrecededBySpace&gt;True&lt;/SA1006PreprocessorKeywordsMustNotBePrecededBySpace&gt;&lt;SA1021NegativeSignsMustBeSpacedCorrectly&gt;True&lt;/SA1021NegativeSignsMustBeSpacedCorrectly&gt;&lt;SA1022PositiveSignsMustBeSpacedCorrectly&gt;True&lt;/SA1022PositiveSignsMustBeSpacedCorrectly&gt;&lt;SA1025CodeMustNotContainMultipleWhitespaceInARow&gt;True&lt;/SA1025CodeMustNotContainMultipleWhitespaceInARow&gt;&lt;/StyleCop.Spacing&gt;&lt;CSMakeFieldReadonly&gt;True&lt;/CSMakeFieldReadonly&gt;&lt;CSArrangeQualifiers&gt;True&lt;/CSArrangeQualifiers&gt;&lt;CSharpFormatDocComments&gt;True&lt;/CSharpFormatDocComments&gt;&lt;CSCodeStyleAttributes ArrangeTypeAccessModifier="False" ArrangeTypeMemberAccessModifier="False" SortModifiers="False" RemoveRedundantParentheses="True" AddMissingParentheses="False" ArrangeBraces="False" ArrangeAttributes="False" ArrangeArgumentsStyle="False" ArrangeCodeBodyStyle="True" ArrangeVarStyle="True" /&gt;&lt;CSUpdateFileHeader&gt;True&lt;/CSUpdateFileHeader&gt;&lt;/Profile&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/RecentlyUsedProfile/@EntryValue">osisa</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeCleanup/SilentCleanupProfile/@EntryValue">osisa</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/ALIGN_MULTILINE_ARRAY_AND_OBJECT_INITIALIZER/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/BLANK_LINES_AROUND_SINGLE_LINE_AUTO_PROPERTY/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/BLANK_LINES_AROUND_SINGLE_LINE_FIELD/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/BLANK_LINES_AROUND_SINGLE_LINE_INVOCABLE/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/BLANK_LINES_AROUND_SINGLE_LINE_PROPERTY/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/BLANK_LINES_BETWEEN_USING_GROUPS/@EntryValue">1</s:Int64>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_ATTRIBUTE_STYLE/@EntryValue">SEPARATE</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_FIXED_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_FOR_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_FOREACH_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_IFELSE_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/FORCE_WHILE_BRACES_STYLE/@EntryValue">ALWAYS_ADD</s:String>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/KEEP_BLANK_LINES_IN_CODE/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/KEEP_BLANK_LINES_IN_DECLARATIONS/@EntryValue">1</s:Int64>
+	
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/MODIFIERS_ORDER/@EntryValue">public protected internal private static new abstract virtual override sealed readonly extern unsafe volatile async</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_ACCESSORHOLDER_ATTRIBUTE_ON_SAME_LINE_EX/@EntryValue">NEVER</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_CONSTRUCTOR_INITIALIZER_ON_SAME_LINE/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_FIELD_ATTRIBUTE_ON_SAME_LINE/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_FIELD_ATTRIBUTE_ON_SAME_LINE_EX/@EntryValue">NEVER</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_SIMPLE_ACCESSOR_ON_SINGLE_LINE/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_SIMPLE_EMBEDDED_STATEMENT_ON_SAME_LINE/@EntryValue">NEVER</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_TYPE_CONSTRAINTS_ON_SAME_LINE/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_WHILE_ON_NEW_LINE/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SIMPLE_EMBEDDED_STATEMENT_STYLE/@EntryValue">LINE_BREAK</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_AFTER_TYPECAST_PARENTHESES/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_AROUND_MULTIPLICATIVE_OP/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_BEFORE_SIZEOF_PARENTHESES/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_BEFORE_TYPEOF_PARENTHESES/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/SPACE_WITHIN_SINGLE_LINE_ARRAY_INITIALIZER_BRACES/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/STICK_COMMENT/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_AFTER_DECLARATION_LPAR/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_AFTER_INVOCATION_LPAR/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_ARGUMENTS_STYLE/@EntryValue">CHOP_IF_LONG</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_BEFORE_BINARY_OPSIGN/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_BEFORE_FIRST_TYPE_PARAMETER_CONSTRAINT/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_EXTENDS_LIST_STYLE/@EntryValue">CHOP_IF_LONG</s:String>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_LIMIT/@EntryValue">500</s:Int64>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/WRAP_PARAMETERS_STYLE/@EntryValue">CHOP_IF_LONG</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/ALIGN_MULTIPLE_DECLARATION/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/CodeFormatting/JavaScriptCodeFormatting/JavaScriptFormatOther/ALIGN_MULTIPLE_DECLARATION/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/CSharpFileLayoutPatterns/Pattern/@EntryValue">&lt;?xml version="1.0" encoding="utf-16"?&gt;&#xD;
+&lt;Patterns xmlns="urn:schemas-jetbrains-com:member-reordering-patterns"&gt;&#xD;
+  &lt;TypePattern Priority="2000" DisplayName="Type Pattern"&gt;&#xD;
+    &lt;TypePattern.Match&gt;&#xD;
+      &lt;And&gt;&#xD;
+        &lt;Kind Is="Interface" /&gt;&#xD;
+        &lt;Or&gt;&#xD;
+          &lt;HasAttribute Name="System.Runtime.InteropServices.InterfaceTypeAttribute" /&gt;&#xD;
+          &lt;HasAttribute Name="System.Runtime.InteropServices.ComImport" /&gt;&#xD;
+        &lt;/Or&gt;&#xD;
+      &lt;/And&gt;&#xD;
+    &lt;/TypePattern.Match&gt;&#xD;
+  &lt;/TypePattern&gt;&#xD;
+  &lt;TypePattern Priority="2000" DisplayName="Type Pattern"&gt;&#xD;
+    &lt;TypePattern.Match&gt;&#xD;
+      &lt;And&gt;&#xD;
+        &lt;Or&gt;&#xD;
+          &lt;Kind Is="Struct" /&gt;&#xD;
+          &lt;Kind Is="Class" /&gt;&#xD;
+        &lt;/Or&gt;&#xD;
+        &lt;HasAttribute Name="System.Runtime.InteropServices.StructLayoutAttribute" /&gt;&#xD;
+      &lt;/And&gt;&#xD;
+    &lt;/TypePattern.Match&gt;&#xD;
+  &lt;/TypePattern&gt;&#xD;
+  &lt;TypePattern Priority="2000" DisplayName="Type Pattern"&gt;&#xD;
+    &lt;TypePattern.Match&gt;&#xD;
+      &lt;And&gt;&#xD;
+        &lt;Kind Is="Class" /&gt;&#xD;
+        &lt;Name Is=".*NativeMethods" /&gt;&#xD;
+      &lt;/And&gt;&#xD;
+    &lt;/TypePattern.Match&gt;&#xD;
+  &lt;/TypePattern&gt;&#xD;
+  &lt;TypePattern Priority="1000" DisplayName="Type Pattern"&gt;&#xD;
+    &lt;TypePattern.Match&gt;&#xD;
+      &lt;Or&gt;&#xD;
+        &lt;Kind Is="Class" /&gt;&#xD;
+        &lt;Kind Is="Struct" /&gt;&#xD;
+        &lt;Kind Is="Interface" /&gt;&#xD;
+      &lt;/Or&gt;&#xD;
+    &lt;/TypePattern.Match&gt;&#xD;
+    &lt;Region Name="Constants"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Constant" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Static Fields"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Field" /&gt;&#xD;
+            &lt;Static /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Readonly /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Fields"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Field" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Readonly /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Constructors and Destructors"&gt;&#xD;
+      &lt;Entry Priority="200" DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Or&gt;&#xD;
+            &lt;Kind Is="Constructor" /&gt;&#xD;
+            &lt;Kind Is="Destructor" /&gt;&#xD;
+          &lt;/Or&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Kind Order="Constructor Destructor" /&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Delegates"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Delegate" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Public Events"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Event" /&gt;&#xD;
+            &lt;Access Is="Public" /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Explicit Interface Events"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Event" /&gt;&#xD;
+            &lt;ImplementsInterface /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;ImplementsInterface Immediate="True" /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Events"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Event" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Enums"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Enum" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Interfaces"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Interface" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Public Properties"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Property" /&gt;&#xD;
+            &lt;Access Is="Public" /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Explicit Interface Properties"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Property" /&gt;&#xD;
+            &lt;ImplementsInterface /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;ImplementsInterface Immediate="True" /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Properties"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Property" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Public Indexers"&gt;&#xD;
+      &lt;Entry Priority="1000" DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Indexer" /&gt;&#xD;
+            &lt;Access Is="Public" /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Explicit Interface Indexers"&gt;&#xD;
+      &lt;Entry Priority="1000" DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Indexer" /&gt;&#xD;
+            &lt;ImplementsInterface /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;ImplementsInterface Immediate="True" /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Indexers"&gt;&#xD;
+      &lt;Entry Priority="1000" DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Indexer" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Public Methods and Operators"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Or&gt;&#xD;
+              &lt;Kind Is="Method" /&gt;&#xD;
+              &lt;Kind Is="Operator" /&gt;&#xD;
+            &lt;/Or&gt;&#xD;
+            &lt;Access Is="Public" /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Explicit Interface Methods"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;And&gt;&#xD;
+            &lt;Kind Is="Method" /&gt;&#xD;
+            &lt;ImplementsInterface /&gt;&#xD;
+          &lt;/And&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;ImplementsInterface Immediate="True" /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Methods"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Method" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Region Name="Operators"&gt;&#xD;
+      &lt;Entry DisplayName="Entry"&gt;&#xD;
+        &lt;Entry.Match&gt;&#xD;
+          &lt;Kind Is="Operator" /&gt;&#xD;
+        &lt;/Entry.Match&gt;&#xD;
+        &lt;Entry.SortBy&gt;&#xD;
+          &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+          &lt;Name /&gt;&#xD;
+        &lt;/Entry.SortBy&gt;&#xD;
+      &lt;/Entry&gt;&#xD;
+    &lt;/Region&gt;&#xD;
+    &lt;Entry Priority="600" DisplayName="Entry"&gt;&#xD;
+      &lt;Entry.Match&gt;&#xD;
+        &lt;Kind Is="Struct" /&gt;&#xD;
+      &lt;/Entry.Match&gt;&#xD;
+      &lt;Entry.SortBy&gt;&#xD;
+        &lt;Static /&gt;&#xD;
+        &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+        &lt;Name /&gt;&#xD;
+      &lt;/Entry.SortBy&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+    &lt;Entry Priority="700" DisplayName="Entry"&gt;&#xD;
+      &lt;Entry.Match&gt;&#xD;
+        &lt;Kind Is="Class" /&gt;&#xD;
+      &lt;/Entry.Match&gt;&#xD;
+      &lt;Entry.SortBy&gt;&#xD;
+        &lt;Static /&gt;&#xD;
+        &lt;Access Order="Public Internal ProtectedInternal Protected Private" /&gt;&#xD;
+        &lt;Name /&gt;&#xD;
+      &lt;/Entry.SortBy&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+    &lt;Entry DisplayName="Entry" /&gt;&#xD;
+  &lt;/TypePattern&gt;&#xD;
+&lt;/Patterns&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/CSharpMemberOrderPattern/CustomPattern/@EntryValue">&lt;?xml version="1.0" encoding="utf-8"?&gt;&#xD;
+&lt;!-- Last updated 15.05.2012 --&gt;&#xD;
+&lt;Patterns xmlns="urn:shemas-jetbrains-com:member-reordering-patterns"&gt;&#xD;
+&#xD;
+  &lt;!-- Do not reorder COM interfaces --&gt;&#xD;
+  &lt;Pattern&gt;&#xD;
+    &lt;Match&gt;&#xD;
+      &lt;And Weight="2000"&gt;&#xD;
+        &lt;Kind Is="interface"/&gt;&#xD;
+        &lt;Or&gt;&#xD;
+          &lt;HasAttribute CLRName="System.Runtime.InteropServices.InterfaceTypeAttribute"/&gt;&#xD;
+          &lt;HasAttribute CLRName="System.Runtime.InteropServices.ComImport"/&gt;&#xD;
+        &lt;/Or&gt;&#xD;
+      &lt;/And&gt;&#xD;
+    &lt;/Match&gt;&#xD;
+  &lt;/Pattern&gt;&#xD;
+&#xD;
+  &lt;!-- Do not reorder P/Invoke structs --&gt;&#xD;
+  &lt;Pattern&gt;&#xD;
+    &lt;Match&gt;&#xD;
+      &lt;And Weight="2000"&gt;&#xD;
+        &lt;Or&gt;&#xD;
+          &lt;Kind Is="struct"/&gt;&#xD;
+          &lt;Kind Is="class"/&gt;&#xD;
+        &lt;/Or&gt;&#xD;
+        &lt;HasAttribute CLRName="System.Runtime.InteropServices.StructLayoutAttribute"/&gt;&#xD;
+      &lt;/And&gt;&#xD;
+    &lt;/Match&gt;&#xD;
+  &lt;/Pattern&gt;&#xD;
+&#xD;
+  &lt;!-- Do not reorder P/Invoke classes (called xxxNativeMethods) --&gt;&#xD;
+  &lt;Pattern&gt;&#xD;
+    &lt;Match&gt;&#xD;
+      &lt;And Weight="2000"&gt;&#xD;
+        &lt;Kind Is="class"/&gt;&#xD;
+        &lt;Name Is=".*NativeMethods" /&gt;&#xD;
+      &lt;/And&gt;&#xD;
+    &lt;/Match&gt;&#xD;
+  &lt;/Pattern&gt;&#xD;
+&#xD;
+  &lt;!-- StyleCop pattern --&gt;&#xD;
+  &lt;Pattern RemoveAllRegions="true"&gt;&#xD;
+    &lt;Match&gt;&#xD;
+      &lt;Or Weight="1000" &gt;&#xD;
+        &lt;Kind Is="class" /&gt;&#xD;
+        &lt;Kind Is="struct" /&gt;&#xD;
+        &lt;Kind Is="interface"/&gt;&#xD;
+      &lt;/Or&gt;&#xD;
+    &lt;/Match&gt;&#xD;
+&#xD;
+    &lt;!-- Constants --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="constant"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private"/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Constants"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- Static fields --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="field"/&gt;&#xD;
+          &lt;Static /&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private"/&gt;&#xD;
+        &lt;Readonly/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Static Fields"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- Fields --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="field"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private"/&gt;&#xD;
+        &lt;Readonly/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Fields"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- constructors and destructors --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Or Weight="200"&gt;&#xD;
+          &lt;Kind Is="constructor"/&gt;&#xD;
+          &lt;Kind Is="destructor"/&gt;&#xD;
+        &lt;/Or&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Kind Order="constructor destructor"/&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private"/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Constructors and Destructors"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- delegates --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="delegate"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Static /&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Delegates"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- public events --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="event"/&gt;&#xD;
+          &lt;Access Is="public"/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public" /&gt;&#xD;
+        &lt;Static /&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Public Events"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- interface events --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="event"/&gt;&#xD;
+          &lt;ImplementsInterface/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;ImplementsInterface Immediate="true"/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Explicit Interface Events" /&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- other events --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="event"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Static /&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Events"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- enum --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="enum"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Enums"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- interfaces --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="interface" /&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Interfaces"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- public properties --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="property"/&gt;&#xD;
+          &lt;Access Is="public"/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public"/&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Public Properties"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- interface properties --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="property"/&gt;&#xD;
+          &lt;ImplementsInterface/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;ImplementsInterface Immediate="true"/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Explicit Interface Properties" /&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- other properties --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="property"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private"/&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Properties"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- public indexers --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="indexer" Weight="1000" /&gt;&#xD;
+          &lt;Access Is="public"/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public" /&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Public Indexers"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- interface indexers --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="indexer" Weight="1000"/&gt;&#xD;
+          &lt;ImplementsInterface/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;ImplementsInterface Immediate="true"/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Explicit Interface Indexers" /&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- other indexers --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="indexer" Weight="1000" /&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Indexers"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- public methods (includes operators) --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Or&gt;&#xD;
+            &lt;Kind Is="method"/&gt;&#xD;
+            &lt;Kind Is="operator"/&gt;&#xD;
+          &lt;/Or&gt;&#xD;
+          &lt;Access Is="public"/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public"/&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Public Methods and Operators"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- interface methods --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;And&gt;&#xD;
+          &lt;Kind Is="method"/&gt;&#xD;
+          &lt;ImplementsInterface/&gt;&#xD;
+        &lt;/And&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;ImplementsInterface Immediate="true"/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Explicit Interface Methods" /&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- other methods --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="method"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private"/&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Methods"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- operators --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="operator"/&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Static/&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+      &lt;Group Region="Operators"/&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- Nested structs --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="struct"&#xD;
+              Weight="600" /&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Static /&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- Nested classes --&gt;&#xD;
+    &lt;Entry&gt;&#xD;
+      &lt;Match&gt;&#xD;
+        &lt;Kind Is="class"&#xD;
+              Weight="700" /&gt;&#xD;
+      &lt;/Match&gt;&#xD;
+      &lt;Sort&gt;&#xD;
+        &lt;Static /&gt;&#xD;
+        &lt;Access Order="public internal protected-internal protected private" /&gt;&#xD;
+        &lt;Name/&gt;&#xD;
+      &lt;/Sort&gt;&#xD;
+    &lt;/Entry&gt;&#xD;
+&#xD;
+    &lt;!-- all other members --&gt;&#xD;
+    &lt;Entry/&gt;&#xD;
+&#xD;
+  &lt;/Pattern&gt;&#xD;
+&lt;/Patterns&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/CSharpMemberOrderPattern/LayoutType/@EntryValue">CustomLayout</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CSharpUsing/QualifiedUsingAtNestedScope/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/CodeStyle/EditorConfig/ShowEditorConfigStatusBarIndicator/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/FileHeader/FileHeaderText/@EntryValue">--------------------------------------------------------------------------------------------------------------------&#xD;
+&lt;copyright company="o.s.i.s.a. GmbH" file="$FILENAME$"&gt;&#xD;
+   (c) 2014. See licence text in binary folder.&#xD;
+&lt;/copyright&gt;&#xD;
+ --------------------------------------------------------------------------------------------------------------------&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/Generate/=EqualityMembers/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/Generate/=EqualityMembers/Options/=ChangeEquals/@EntryIndexedValue">Replace</s:String>
+	<s:String x:Key="/Default/CodeStyle/Generate/=EqualityMembers/Options/=ChangeGetHashCode/@EntryIndexedValue">Replace</s:String>
+	<s:String x:Key="/Default/CodeStyle/Generate/=EqualityMembers/Options/=EqualityOperators/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/CodeStyle/Generate/=EqualityMembers/Options/=ImplementIEquatable/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=AA/@EntryIndexedValue">AA</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=AAA/@EntryIndexedValue">AAA</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=AB/@EntryIndexedValue">AB</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ABBY/@EntryIndexedValue">ABBY</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ABBYY/@EntryIndexedValue">ABBYY</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ABCDFG/@EntryIndexedValue">ABCDFG</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ACE/@EntryIndexedValue">ACE</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=AD/@EntryIndexedValue">AD</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ADOX/@EntryIndexedValue">ADOX</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ANSI/@EntryIndexedValue">ANSI</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=AOT/@EntryIndexedValue">AOT</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ASCII/@EntryIndexedValue">ASCII</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ASP/@EntryIndexedValue">ASP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=AXC/@EntryIndexedValue">AXC</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=BB/@EntryIndexedValue">BB</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=BL/@EntryIndexedValue">BL</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=BV/@EntryIndexedValue">BV</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CA/@EntryIndexedValue">CA</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CHF/@EntryIndexedValue">CHF</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CI/@EntryIndexedValue">CI</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CLSID/@EntryIndexedValue">CLSID</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=COM/@EntryIndexedValue">COM</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CR/@EntryIndexedValue">CR</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CRLF/@EntryIndexedValue">CRLF</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CRUD/@EntryIndexedValue">CRUD</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CS/@EntryIndexedValue">CS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CSOM/@EntryIndexedValue">CSOM</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CSV/@EntryIndexedValue">CSV</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=DDL/@EntryIndexedValue">DDL</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=DMS/@EntryIndexedValue">DMS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=DTA/@EntryIndexedValue">DTA</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=DTE/@EntryIndexedValue">DTE</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=EF/@EntryIndexedValue">EF</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ESR/@EntryIndexedValue">ESR</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=GAC/@EntryIndexedValue">GAC</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=GDI/@EntryIndexedValue">GDI</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=GUID/@EntryIndexedValue">GUID</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=HTTP/@EntryIndexedValue">HTTP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=HTTPS/@EntryIndexedValue">HTTPS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ID/@EntryIndexedValue">ID</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=IDE/@EntryIndexedValue">IDE</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=IO/@EntryIndexedValue">IO</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=IP/@EntryIndexedValue">IP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ISO/@EntryIndexedValue">ISO</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=IUI/@EntryIndexedValue">IUI</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=KLIB/@EntryIndexedValue">KLIB</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=LF/@EntryIndexedValue">LF</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=MDB/@EntryIndexedValue">MDB</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=MS/@EntryIndexedValue">MS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=MSSQL/@EntryIndexedValue">MSSQL</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=MVC/@EntryIndexedValue">MVC</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=NET/@EntryIndexedValue">NET</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=NL/@EntryIndexedValue">NL</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=NS/@EntryIndexedValue">NS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=NT/@EntryIndexedValue">NT</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=OCR/@EntryIndexedValue">OCR</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=OK/@EntryIndexedValue">OK</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=OP/@EntryIndexedValue">OP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=PC/@EntryIndexedValue">PC</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=PK/@EntryIndexedValue">PK</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=QT/@EntryIndexedValue">QT</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=RTFOCR/@EntryIndexedValue">RTFOCR</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=SA/@EntryIndexedValue">SA</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=SKU/@EntryIndexedValue">SKU</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=SOH/@EntryIndexedValue">SOH</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=SP/@EntryIndexedValue">SP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=SS/@EntryIndexedValue">SS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=TFS/@EntryIndexedValue">TFS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=UI/@EntryIndexedValue">UI</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=URL/@EntryIndexedValue">URL</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=USP/@EntryIndexedValue">USP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=VB/@EntryIndexedValue">VB</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=VM/@EntryIndexedValue">VM</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=VS/@EntryIndexedValue">VS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=WS/@EntryIndexedValue">WS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=WSDL/@EntryIndexedValue">WSDL</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=WXS/@EntryIndexedValue">WXS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=XML/@EntryIndexedValue">XML</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=XP/@EntryIndexedValue">XP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=XX/@EntryIndexedValue">XX</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=XXX/@EntryIndexedValue">XXX</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=XY/@EntryIndexedValue">XY</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=ZIP/@EntryIndexedValue">ZIP</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/Naming/CSharpNaming/ApplyAutoDetectedRules/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/EventHandlerPatternLong/@EntryValue">$object$_On$event$</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Constants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=EnumMember/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Interfaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="I" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=LocalConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Locals/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=MethodPropertyEvent/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb_AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Other/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Parameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateInstanceFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateStaticFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateStaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PublicFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=StaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=TypeParameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="T" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=TypesAndNamespaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb"&gt;&lt;ExtraRule Prefix="I" Suffix="" Style="AaBb" /&gt;&lt;/Policy&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/EventHandlerPatternLong/@EntryValue">$object$_On$event$</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Constants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=EnumMember/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Interfaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="I" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=LocalConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Locals/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=MethodPropertyEvent/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Other/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=Parameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateInstanceFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateStaticFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PrivateStaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=PublicFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=StaticReadonly/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=TypeParameters/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="T" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/VBNaming/PredefinedNamingRules/=TypesAndNamespaces/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb" /&gt;</s:String>
+	<s:Boolean x:Key="/Default/Environment/ExternalSources/FirstTimeFormShown/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/ExternalSources/Decompiler/DecompileMethodBodies/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/ExternalSources/Decompiler/DecompilerLegalNoticeAccepted/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/ExternalSources/Decompiler/ReorderMembers/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/ExternalSources/PdbNavigation/FolderSubstitutions/=C_003A_005Csym16/@EntryIndexedValue">C:\sym16</s:String>
+	<s:Boolean x:Key="/Default/Environment/Feedback/SendActivityLogs/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/Feedback/ShouldPrompt/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/GenerateMru/GroupByType/=Constructor/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/GenerateMru/GroupByType/=EqualityMembers/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/GenerateMru/GroupByType/=Implementations/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/GenerateMru/SortByName/=Constructor/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/GenerateMru/SortByName/=EqualityMembers/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/GenerateMru/SortByName/=Implementations/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/Hierarchy/PsiConfigurationSettingsKey/LocationType/@EntryValue">SOLUTION_FOLDER</s:String>
+	<s:Boolean x:Key="/Default/Environment/MemoryUsageIndicator/IsVisible/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/OpenDocument/OpenDocumentAfterModification/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=AutoRecoverer/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=Format/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=Roslyn_002Dswea/@EntryIndexedValue">DO_NOTHING</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=ShowAnnotations/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=SolExp_002DTrack/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=StartPage_002DIsDownloadRefreshEnabled/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=StartPage_002DOnEnvironmentStatup/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=SyncSettings/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=TextEditor_002DCodeLens/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=TextEditor_002DTrackChanges_002D2/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=VCS/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=VsBulb/@EntryIndexedValue">DO_NOTHING</s:String>
+	<s:String x:Key="/Default/Environment/PerformanceGuide/SwitchBehaviour/=XAML_0020Designer/@EntryIndexedValue">LIVE_MONITOR</s:String>
+	<s:Boolean x:Key="/Default/Environment/SearchAndNavigation/AutoExpandResults/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SearchAndNavigation/MergeOccurences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpAttributeForSingleLineMethodUpgrade/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpFileLayoutPatternsUpgrade/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpKeepExistingMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpPlaceEmbeddedOnSameLineMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpRenamePlacementToArrangementMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpUseContinuousIndentInsideBracesMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EAddAccessorOwnerDeclarationBracesMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EAlwaysTreatStructAsNotReorderableMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002ECSharpPlaceAttributeOnSameLineMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateBlankLinesAroundFieldToBlankLinesAroundProperty/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateThisQualifierSettings/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002EJavaScript_002ECodeStyle_002ESettingsUpgrade_002EJsCodeFormatterSettingsUpgrader/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002EJavaScript_002ECodeStyle_002ESettingsUpgrade_002EJsParsFormattingSettingsUpgrader/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002EJavaScript_002ECodeStyle_002ESettingsUpgrade_002EJsWrapperSettingsUpgrader/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EUnitTestFramework_002ESettings_002EMigrations_002ERemoveBuildPolicyAlwaysMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/TextControl/HighlightCurrentLine/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/CustomStartDirectory/@EntryValue">C:\test</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/ExcludedCategoriesList/@EntryValue">UI,LongRunning,Review,Review2,LocalSQLNeed,Installation,Word,UITest,ListAdapter,Weak,Resources,Access,Binding,Dropbox,Entity,Command,GemeindeExport,Exchange,WebService,Web,Soz,AD</s:String>
+	<s:Boolean x:Key="/Default/Environment/UnitTesting/ShadowCopy/@EntryValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/UnitTesting/UseCustomStartDirectory/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UserInterface/ShortcutSchemeName/@EntryValue">Idea</s:String>
+	<s:Boolean x:Key="/Default/Environment/UserInterface/TipsManager/ShowTipsOnStartup/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/ExtensionManager/IncludePrereleasePackages/@EntryValue">False</s:String>
+	<s:Int64 x:Key="/Default/Housekeeping/ExtensionManager/SelectedProvider/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/IntellisenseHousekeeping/HintUsed/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OptionsDialog/Position/@EntryValue">[-106,0](1708,1040)</s:String>
+	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/OptionsDialog/SelectedPageId/@EntryValue">CodeCleanup</s:String>
+	<s:String x:Key="/Default/Housekeeping/Layout/DialogWindows/RefactoringWizardWindow/Location/@EntryValue">-18,-150</s:String>
+	<s:String x:Key="/Default/Housekeeping/Layout/Window/Sizes/=MainWindow/@EntryIndexedValue">900,600</s:String>
+	<s:String x:Key="/Default/Housekeeping/Layout/Window/Sizes/=ProgressWindow/@EntryIndexedValue">450,350</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/LiveTemplatesHousekeeping/HotspotSessionHintIsShown/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/Search/SearchForOverloading/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/SubmitToTrackerExceptionReportService/Password/@EntryValue">E.FVL8jaRtGis=</s:String>
+	<s:Boolean x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/IsPreviewVisible/=UnitTestSession/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewOrientation/=UnitTestSession/@EntryIndexedValue">Vertical</s:String>
+	<s:String x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewOrientation/=UnitTestSessionView/@EntryIndexedValue">Vertical</s:String>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterHorizontalPosition/=FindReferencedCodeDescriptor/@EntryIndexedValue">271</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterHorizontalPosition/=GotoFileBrowserDescriptor/@EntryIndexedValue">271</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterHorizontalPosition/=SearchUsagesDescriptor/@EntryIndexedValue">266</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterHorizontalPosition/=TextualChangeDescriptor/@EntryIndexedValue">91</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterHorizontalPosition/=UnitTestSession/@EntryIndexedValue">444</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterHorizontalPosition/=UnitTestSessionView/@EntryIndexedValue">157</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterVerticalPosition/=UnitTestSession/@EntryIndexedValue">416</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/TreeModelBrowserPanelPersistance/PreviewSplitterVerticalPosition/=UnitTestSessionView/@EntryIndexedValue">479</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestExplorer/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionDefault/ActivateOnRun/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionDefault/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=063FB7F255D64F98B01803215056985E/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=0B750A629B2A4CE99BCEF6AB1F741290/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=0BBF40E073994A63BFB6243914B1048A/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=0DAD5EB95E754B86A458864182C54685/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=0FCE2F40B61C44839C2DD492AD71F5F3/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1452489FB3BD403AA123FD57EE167BD4/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1AEEDB3D1E704EF789EA61F0F6EDC404/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1BCDECD75AD146EEBC194435B9E62FFE/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1CD33C73883C4714AAEA25E09272A6A1/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1CD33C73883C4714AAEA25E09272A6A1/TrackActiveElement/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=1FF6F357A77740CAA7E315840E1AD7B6/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2006EBF6528F49D98E63EA9C2BA4839A/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2B44487049924A23B80AF9A68ABABA64/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2C435304BDC54B2AA8FFE13C46320743/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2CA62F4AE2F342889FAD7F07B0D238C5/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2D326AC6831C4246B8B4EEB95248F5E6/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=2D66A3E067764B73B1B97C79467FF366/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=33D8939F78D348879FECBCDFC8FE66C0/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=3BF589853BE24D9AAB609A763A3D6165/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=3E5FD4036FB04FDD9BB753787F84EB9F/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=3EEB0561A1674210958385BF21AACFB5/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=41D72E844E07422EBC91B8133F896D08/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=43359777BB524CE0A19DD4A354C309AE/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=456BDB77CE3D43B094D21FB6A69A02DD/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=485982CDDF054DCE992DE3F081000FE5/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=48C36903EAF442BAB361AC4E32300E30/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=4EBFBE9132B2464F88738C53ED826F37/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=4F08B6FD04D140AAB4A28CE4257DB490/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=4FD78E31D8004486A422138580FBB64D/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=5151256F337A410FBCA48227505230E8/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=51D0F921AEF4448DB418731BA0D43DD3/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6585FDDCA17545988124D9D288DC2CBE/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=65D9AFB651454645B94A7DB4E1D74460/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6A3E736B3DF643B98F154FF1FE2A0701/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6B008C1E103E4CFF99311578AD27F47C/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6C3C2082D29C476DB194126F07B385A9/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6D0C3DEB74994C12A65CEC13FADF2C82/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=6F36C159D0E64A4D96615F2ADCF5DE40/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=70402E85069B45D2A481AB9B0FC49536/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=70CCA260AF114C538FEEBC2EE0F54DD0/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=71A8E1AE4BA14B1A9599441D661B8244/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=79B5B582DD894C9AB8C987E629945D12/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=7DE4D1E042B04E8F9780561A7B9E50F7/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=80818388C8D9432693F4BD7A38726025/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=80C10AF23D30479691D047E662A4F003/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=92A4EBFCC19C4E2F93F30DCA4B7935A3/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9A875F988F6746CCB67A9C9E4FA45412/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9B44BEA83FA246BF8910AEA60B75F5DD/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=9E2BCFF14DB649C691609FD6C335452B/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=A4634982AA7A469C88FE49E5B2EDFB46/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=AF2CF47E15574AD68F82B100F98922B3/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=B344D01E798E41B5BA567C97D3263909/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=B60E5D48B5684CE6ABA4F63900CE01A7/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=B847B286B9014E21963047883DC41BFF/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=BFA714BC45F3475688F9A6DBEF54953B/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=BFA714BC45F3475688F9A6DBEF54953B/TrackActiveElement/@EntryValue">True</s:Boolean>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=C2D55348297F426FAF0378EFC8BE3553/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=C300A2A412B041C8B2A41B59AFD48010/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=C4CE5AC995464D938E0DEAE60D6F01D6/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=CA334DC2F914482FA7816EFB27AE5B3B/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=CD131CD774C3460CA235F60F578A5410/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=D2784C8F38C342388396960E5DE8C8A3/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=D4A4A5FC250645888ED6F5C7D21D6D95/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=D5776CD71B0C490BBD3CAB9EB7A06C0B/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=D8F5E032AD6347F6AADCD3E21EAAD0D6/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=DD90262EA87D4F8280C33FCFAB8C42D3/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=E90F1B4A99A841B1A014C60836E3C8D5/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=EB0FCDB741AC4CCA965168427E35C4C1/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=EDFF951FE35B4E3293B839B90F68C900/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=F2E57AF90F984948847CDBA2B83BFFB6/GroupingIndex/@EntryValue">0</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=F48B282465FC4520BBCCB502CDB06E68/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=F53E11C0EB8C478C9FBA2D8C260F07F1/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=F7DBFBE437104D2FADDB5D9D4B34FDF3/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Int64 x:Key="/Default/Housekeeping/UnitTestingMru/UnitTestSessionPersistentData/=FB6B60267918475C82031976BC847A08/GroupingIndex/@EntryValue">4</s:Int64>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=AnalyzeReferences/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=BlockComment/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EBookmarksMenu/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark0/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark1/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark2/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark3/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark4/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark5/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark6/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark7/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark8/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EGoToBookmark9/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark0/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark1/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark2/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark3/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark4/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark5/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark6/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark7/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark8/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Bookmarks_002EToggleBookmark9/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ChangeSignature/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=CleanupCode/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=CompleteCodeSmart/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=CompleteCodeTypeName/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=DuplicateText/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=EnableDaemon/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=EncapsulateField/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ExploreStackTrace/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ExtendSelection/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ExtractMethod/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=FindUsagesAdvanced/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ForceCompleteItem/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Generate/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GenerateFileBesides/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoBase/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoContainingDeclaration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoFile/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoFileMember/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoInheritors/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoLastEditLocation/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoNextErrorInSolution/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoNextHighlight/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoNextMethod/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoNextOccurence/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoPrevErrorInSolution/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoPrevHighlight/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoPreviousOccurence/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoPrevMethod/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoRecentEdits/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoRecentFiles/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoRelatedFiles/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoSymbol/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoType/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoTypeDeclaration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=GotoUsage/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=HighlightUsages/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=InlineVariable/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=InspectThis/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=IntroduceField/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=IntroduceVariable/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=IntroParameter/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=LineComment/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=LiveTemplates_002EInsert/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=LocateInSolutionExplorerAction/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Move/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=MoveDown/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=MoveLeft/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=MoveRight/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=MoveUp/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=NavigateTo/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ParameterInfo_002EGoToPreviousSignature/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=QuickDoc/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=QuickFix/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=RefactorThis/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=Rename/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ReSharper_005FUnitTest_005FDebugContext/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ReSharper_005FUnitTest_005FRunContext/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=SafeDelete/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=SelectContainingDeclaration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowAnalyzeReferences/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowCodeStructure/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowFindResults/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowHierarchyWindow/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowInspectionWindow/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowTodoExplorer/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowUnitTestExplorer/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShowUnitTestSessions/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=ShrinkSelection/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=SilentCleanupCode/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=SurroundWith/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=TypeHierarchy_002EBrowse/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=UnitTest_002ERunCurrentSession/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=UnitTest_002ERunSolution/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=UnitTestSession_002ERepeatPreviousRun/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=WindowManager_002EActivateRecentTool/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ActionsWithShortcuts/=WindowManager_002ECloseRecentTool/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=AnalyzeReferences/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=AnalyzeReferences/Shortcuts/=Control_002BAlt_002BY/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=DuplicateText/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=DuplicateText/Shortcuts/=Control_002BD/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ExtendSelection/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ExtendSelection/Shortcuts/=Control_002BAlt_002BRight/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ExtractMethod/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ExtractMethod/Shortcuts/=Control_002BR_0020Control_002BM/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ExtractMethod/Shortcuts/=Control_002BR_0020M/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=InlineVariable/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=InlineVariable/Shortcuts/=Control_002BR_0020Control_002BI/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=InlineVariable/Shortcuts/=Control_002BR_0020I/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=IntroduceField/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=IntroduceField/Shortcuts/=Control_002BR_0020Control_002BF/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=IntroduceField/Shortcuts/=Control_002BR_0020F/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=IntroduceVariable/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=IntroduceVariable/Shortcuts/=Control_002BR_0020Control_002BV/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=IntroduceVariable/Shortcuts/=Control_002BR_0020V/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=QuickFix/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=QuickFix/Shortcuts/=Alt_002BReturn/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ShowAnalyzeReferences/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ShowAnalyzeReferences/Shortcuts/=Control_002BAlt_002BY/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ShrinkSelection/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/ConflictingActions/=ShrinkSelection/Shortcuts/=Control_002BAlt_002BLeft/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Add/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BBack/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF10/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF11/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF2/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF3/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF6/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF8/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BF9/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BLeft/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BMultiply/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BOemcomma/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BOemPeriod/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BP/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BPause/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BR/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BReturn/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BRight/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BSubtract/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Alt_002BW/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=B/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Back/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BA/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAdd/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BA/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BC/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BE/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BF1/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BF10/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BF11/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BF5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BF6/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BG/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BI/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BJ/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BK/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BL/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BLeft/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BM/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BO/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BOemPeriod/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BP/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BPause/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BQ/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BRight/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BS/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BW/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BX/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BY/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BAlt_002BZ/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BBack/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BC/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BD/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BDelete/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BDown/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BEnd/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF1/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF10/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF2/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF3/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BF9/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BG/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BH/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BHome/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BI/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BInsert/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BJ/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BK/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BL/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BLeft/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BM/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BNext/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BO/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BOem7/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BOemPeriod/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BP/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BPageUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BPause/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BR/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BRight/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BS/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BSpace/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BSubtract/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BTab/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BU/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BV/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BW/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BX/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BY/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Control_002BZ/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Delete/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Down/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=End/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Escape/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F1/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F10/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F11/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F2/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F3/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F7/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F8/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=F9/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Home/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=I/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Insert/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Left/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Next/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=O/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=PageUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Return/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Right/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BA/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BB/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BBack/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BC/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BD/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BD3/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BD4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BDown/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BEnd/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BF10/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BF6/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BH/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BHome/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BLeft/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BN/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BO/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BOemcomma/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BOemPeriod/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BP/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BR/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BReturn/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BRight/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BS/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BV/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BAlt_002BW/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BBack/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BA/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BAlt_002BC/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BAlt_002BF11/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BAlt_002BL/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BAlt_002BP/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BAlt_002BR/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BAlt_002BS/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BAlt_002BW/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BB/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BC/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BD/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BDown/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BEnd/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BF/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BF10/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BF12/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BF3/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BF5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BF6/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BF9/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BH/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BHome/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BI/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BInsert/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BJ/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BL/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BLeft/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BM/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BNext/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BO/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BOem7/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BOemPeriod/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BPageUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BReturn/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BRight/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BS/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BSpace/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BSubtract/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BTab/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BU/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BV/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BX/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BY/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BControl_002BZ/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BDelete/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BDown/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BEnd/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BEscape/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF1/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF11/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF3/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF7/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF8/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BF9/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BHome/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BInsert/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BLeft/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BNext/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BPageUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BReturn/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BRight/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BSpace/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BTab/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Shift_002BUp/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Subtract/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Tab/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Housekeeping/VsActionManager/KeyboardShortcutToVsCommand/=Up/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=CSharp/@EntryIndexedValue">OverriddenFalse</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=CsHtml/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=Css/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=Html/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=JavaScript/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=JavaScriptVs11/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=MsBuild/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=VB/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideIntellisense/=Xaml/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=CSharp/@EntryIndexedValue">OverriddenFalse</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=CsHtml/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=Css/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=Html/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=JavaScript/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=JavaScriptVs11/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=VB/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/Housekeeping/VsSavedAutocompletionValue/OverrideParameterInfo/=Xaml/@EntryIndexedValue">NotOverridden</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=4C84A7D189E28A43AA2631BBE4694112/EntryName/@EntryValue">tag</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=4C84A7D189E28A43AA2631BBE4694112/Position/@EntryValue">10</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=A4284AC46CC5F44FB8DB9B563AE61B01/@KeyIndexDefined">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=A4284AC46CC5F44FB8DB9B563AE61B01/EntryName/@EntryValue"></s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=32F5B2BD4CFE0E42ADE73B7FB68EBDD0/Entry/=A4284AC46CC5F44FB8DB9B563AE61B01/Position/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=5CF342079CE151478A11D345C1816DD0/Entry/=4C84A7D189E28A43AA2631BBE4694112/@KeyIndexDefined">False</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=5CF342079CE151478A11D345C1816DD0/Entry/=4C84A7D189E28A43AA2631BBE4694112/EntryName/@EntryValue"></s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=5CF342079CE151478A11D345C1816DD0/Entry/=A4284AC46CC5F44FB8DB9B563AE61B01/EntryName/@EntryValue">using</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=82514885B0EC3D43B7B61C37BCFD0BA4/Entry/=2B4F6F494E484D4AB67AEBC47828B983/@KeyIndexDefined">False</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=82514885B0EC3D43B7B61C37BCFD0BA4/Entry/=2B4F6F494E484D4AB67AEBC47828B983/Position/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=CF43F654B36FA744AEFAC1E1F7B38D7E/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=CF43F654B36FA744AEFAC1E1F7B38D7E/EntryName/@EntryValue">ptc</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=CF43F654B36FA744AEFAC1E1F7B38D7E/Position/@EntryValue">4</s:Int64>
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/Shortcut/@EntryValue">or</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/Text/@EntryValue">||</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=295D605A49B612488A291911B7BAC4DB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Description/@EntryValue">TesterBaseMethods</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Shortcut/@EntryValue">tstbase</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4E4E7F3F1793F24A96E8074E6A98CD71/Text/@EntryValue">&#xD;
+        #region TasterBaseMethods&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void Adapt()&#xD;
+        {&#xD;
+            // assert&#xD;
+            AdaptBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void BasicCommonIControlFunctionality()&#xD;
+        {&#xD;
+            // assert&#xD;
+            BasicCommonIControlFunctionalityBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ClickBound()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ClickBoundBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ClickUnbound()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ClickUnboundBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ConfigurableOff()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ConfigurableOffBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ConfigurableOn()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ConfigurableOnBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ControlType()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ControlTypeBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetValueItem()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetValueBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetDataMember()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetDataMemberBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetDataSource()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetDataSourceBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetHeight()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetHeightBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetIControl()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetIControlBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetItems()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetItemsBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetLeft()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetLeftBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetName()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetNameBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetOrder()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetOrderBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetSortIndex()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetSortIndexBase();&#xD;
+        }&#xD;
+        &#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetTop()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetTopBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void GetWidth()&#xD;
+        {&#xD;
+            // assert&#xD;
+            GetWidthBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void Inner()&#xD;
+        {&#xD;
+            // assert&#xD;
+            InnerBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void IsReadOnlyFalse()&#xD;
+        {&#xD;
+            // assert&#xD;
+            IsReadOnlyFalseBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void IsReadOnlyTrue()&#xD;
+        {&#xD;
+            // assert&#xD;
+            IsReadOnlyTrueBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void LoadConfiguration()&#xD;
+        {&#xD;
+            // assert&#xD;
+            LoadConfigurationBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void Localize()&#xD;
+        {&#xD;
+            // assert&#xD;
+            LocalizeBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void OnClickAction()&#xD;
+        {&#xD;
+            // assert&#xD;
+            OnClickActionBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void Parent()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ParentBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SaveConfiguration()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SaveConfigurationBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetValue()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetValueBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetDataMember()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetDataMemberBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetDataSource()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetDataSourceBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetHeight()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetHeightBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetItems()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetItemsBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetLeft()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetLeftBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetName()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetNameBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetOrder()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetOrderBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetSortIndex()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetSortIndexBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetTop()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetTopBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SetWidth()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SetWidthBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod, Ignore]&#xD;
+        &#xD;
+        public void ShowAsDialog()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ShowAsDialogBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ShowAsForm()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ShowAsFormBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SubControls()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SubControlsBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void SubViews()&#xD;
+        {&#xD;
+            // assert&#xD;
+            SubViewsBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void TestDispose()&#xD;
+        {&#xD;
+            // assert&#xD;
+            TestDisposeBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ValueProviderBaseNoDataMember()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ValueProviderBaseNoDataMemberBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void ValueProviderBaseWithDataMember()&#xD;
+        {&#xD;
+            // assert&#xD;
+            ValueProviderBaseWithDataMemberBase();&#xD;
+        }&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The basic common i control functionality.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        public void Visibility()&#xD;
+        {&#xD;
+            // assert&#xD;
+            VisibilityBase();&#xD;
+        }&#xD;
+&#xD;
+        #endregion&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Description/@EntryValue">Adds DebuggerDisplayAttribute</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Shortcut/@EntryValue">debugdisplay</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Text/@EntryValue">[DebuggerDisplay("Name={ToString()}")]</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=6875BC9F3E5C5E4B8E09ED51343A4D53/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Description/@EntryValue">Logger.Debug</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Shortcut/@EntryValue">ldbg</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Text/@EntryValue"> Common.Logger.Debug("$MethodName$");</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Field/=MethodName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Field/=MethodName/Expression/@EntryValue">typeMember()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Field/=MethodName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7480EE4D0F41F4478A86F34960A89FD7/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Description/@EntryValue">Create TestContextvariable</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Shortcut/@EntryValue">tstctx</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Text/@EntryValue"> #region Public Properties&#xD;
+&#xD;
+/// &lt;summary&gt;&#xD;
+/// Gets or sets the test context.&#xD;
+/// &lt;/summary&gt;&#xD;
+// ReSharper disable once UnusedMember.Global&#xD;
+// ReSharper disable once MemberCanBePrivate.Global&#xD;
+// ReSharper disable once UnusedAutoPropertyAccessor.Global&#xD;
+public TestContext TestContext { get; set; }&#xD;
+&#xD;
+#endregion</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9E871A7421C20A4294C04D3B415E52B1/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Description/@EntryValue">Throws not Implemented exception</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Shortcut/@EntryValue">thnimp</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Text/@EntryValue"> Logger.Debug("$MethodName$");&#xD;
+ throw new NotImplementedException("$MethodName$");&#xD;
+           </s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Field/=MethodName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Field/=MethodName/Expression/@EntryValue">typeMember()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Field/=MethodName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B0FE7B25DA33724192FBAEEE5C11A21C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Description/@EntryValue">Creates Test Class</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Shortcut/@EntryValue">ctc</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Text/@EntryValue">// --------------------------------------------------------------------------------------------------------------------&#xD;
+// &lt;copyright company="o.s.i.s.a. GmbH" file="$TestClassName$Test.cs"&gt;&#xD;
+//   (c) 2011. See licence text in binary folder.&#xD;
+// &lt;/copyright&gt;&#xD;
+// --------------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+using Microsoft.VisualStudio.TestTools.UnitTesting;&#xD;
+&#xD;
+namespace $TestNameSpace$&#xD;
+{&#xD;
+    /// &lt;summary&gt;&#xD;
+    /// The build and deploy test.&#xD;
+    /// &lt;/summary&gt;&#xD;
+    [TestClass]&#xD;
+    public class $TestClassName$Test&#xD;
+    {&#xD;
+        #region Public Methods and Operators&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// Gets or sets the test context.&#xD;
+        /// &lt;/summary&gt;&#xD;
+		// ReSharper disable once UnusedMember.Global&#xD;
+        public TestContext TestContext { get; set; }&#xD;
+&#xD;
+		#endregion&#xD;
+&#xD;
+        /// &lt;summary&gt;&#xD;
+        /// The TestMethod.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        [TestMethod]&#xD;
+        [DeploymentItem("$TestClassName$File.xaml")]&#xD;
+		 /// &lt;summary&gt;&#xD;
+        /// The $TestClassName$.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        public void TestMethod()&#xD;
+		{&#xD;
+			// arrange&#xD;
+&#xD;
+			// act&#xD;
+&#xD;
+			// assert&#xD;
+		}&#xD;
+	}&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Field/=TestClassName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Field/=TestClassName/Expression/@EntryValue">clipboard()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Field/=TestClassName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Field/=TestNameSpace/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Field/=TestNameSpace/Expression/@EntryValue">getCurrentNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Field/=TestNameSpace/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B9AF74CA1CE3B2418040496065F1498E/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Categories/=PEX/@EntryIndexedValue">PEX</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/CustomProperties/=FileName/@EntryIndexedValue">PexTestClass</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Description/@EntryValue">ptc</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Text/@EntryValue">// --------------------------------------------------------------------------------------------------------------------&#xD;
+// &lt;copyright company="o.s.i.s.a. GmbH" file="$ClassUnderTest$Test.cs"&gt;&#xD;
+//   (c) 2011. See licence text in binary folder.&#xD;
+// &lt;/copyright&gt;&#xD;
+// --------------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+using System;&#xD;
+&#xD;
+using Microsoft.Pex.Framework;&#xD;
+using Microsoft.Pex.Framework.Validation;&#xD;
+&#xD;
+using osisa.Test.Infrastructure;&#xD;
+&#xD;
+namespace $Namespace$&#xD;
+{&#xD;
+	/// &lt;summary&gt;This class contains parameterized unit tests for $ClassUnderTest$.&lt;/summary&gt;&#xD;
+	[PexClass(typeof($ClassUnderTest$))]&#xD;
+	[PexAllowedExceptionFromTypeUnderTest(typeof(InvalidOperationException))]&#xD;
+	[PexAllowedExceptionFromTypeUnderTest(typeof(ArgumentException), AcceptExceptionSubtypes = true)]&#xD;
+	[Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]&#xD;
+	public partial class $ClassUnderTest$Test&#xD;
+	{&#xD;
+		/// &lt;summary&gt;&#xD;
+		/// Test stub for $ClassUnderTest$ construction.&#xD;
+		/// &lt;/summary&gt;&#xD;
+		[PexMethod]&#xD;
+		public $ClassUnderTest$ Constructor()&#xD;
+		{&#xD;
+			// arrange&#xD;
+&#xD;
+			// act&#xD;
+			var testCase = InternalTestCase.Function(()=&gt;new $ClassUnderTest$());&#xD;
+&#xD;
+			// arrange&#xD;
+			testCase.AssertResultNotNull();&#xD;
+			testCase.AssertNoException();&#xD;
+&#xD;
+			return testCase.Result;&#xD;
+		}&#xD;
+	}&#xD;
+}&#xD;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Field/=ClassUnderTest/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Field/=ClassUnderTest/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Field/=ClassUnderTest/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Field/=Namespace/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Field/=Namespace/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Field/=Namespace/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CF43F654B36FA744AEFAC1E1F7B38D7E/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/Shortcut/@EntryValue">aaa</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/Text/@EntryValue">// arrange&#xD;
+&#xD;
+// act&#xD;
+&#xD;
+// assert</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DEE44D45E4FED0469D0AB8C51F25D15B/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Shortcut/@EntryValue">tm</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Text/@EntryValue">[TestMethod]&#xD;
+public void $MethodName$()&#xD;
+{&#xD;
+	// arrange&#xD;
+&#xD;
+	// act&#xD;
+&#xD;
+	// assert&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Field/=MethodName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Field/=MethodName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E14006105A86B2408F8C774C80306E68/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Description/@EntryValue">PexTestClass</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Shortcut/@EntryValue">pexclass</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Text/@EntryValue">// --------------------------------------------------------------------------------------------------------------------&#xD;
+// &lt;copyright company="o.s.i.s.a. GmbH" file="$ClassName$Test.cs"&gt;&#xD;
+//   (c) 2011. See licence text in binary folder.&#xD;
+// &lt;/copyright&gt;&#xD;
+// --------------------------------------------------------------------------------------------------------------------&#xD;
+&#xD;
+&#xD;
+using System;&#xD;
+using System.Linq.Expressions;&#xD;
+using Microsoft.Pex.Framework;&#xD;
+using Microsoft.Pex.Framework.Validation;&#xD;
+&#xD;
+using osisa.Test.Infrastructure;&#xD;
+&#xD;
+namespace osisa.Test&#xD;
+{&#xD;
+    /// &lt;summary&gt;This class contains parameterized unit tests for ActionReference&lt;/summary&gt;&#xD;
+    [PexClass(typeof($ClassName$))]&#xD;
+    [PexAllowedExceptionFromTypeUnderTest(typeof(InvalidOperationException))]&#xD;
+    [PexAllowedExceptionFromTypeUnderTest(typeof(ArgumentException), AcceptExceptionSubtypes = true)]&#xD;
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestClass]&#xD;
+    public partial class $ClassName$Test&#xD;
+    {&#xD;
+        /// &lt;summary&gt;Test stub for get_CatchResult()&lt;/summary&gt;&#xD;
+        [PexMethod]&#xD;
+        public $ClassName$ Constructor()&#xD;
+        {&#xD;
+            // arrange&#xD;
+&#xD;
+            // act&#xD;
+            var testCase = InternalTestCase.Function(()=&gt;target.CatchResult());&#xD;
+&#xD;
+            // arrange&#xD;
+            testCase.AssertResultNotNull();&#xD;
+            testCase.AssertNoException();&#xD;
+&#xD;
+            return testCase.Result;&#xD;
+        }&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Field/=ClassName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Field/=ClassName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEE0503E41A61C449020A1367ADD6264/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Description/@EntryValue">ConfigurationProperty</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Reformat/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Shortcut/@EntryValue">cfgprop</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Text/@EntryValue">		&#xD;
+		/// &lt;summary&gt;&#xD;
+        /// The name of the property within the configuration file.&#xD;
+        /// &lt;/summary&gt;&#xD;
+		private static class ConfigurationNames&#xD;
+		{&#xD;
+			public const string $PropertyName$="$PropertyName$";&#xD;
+		}&#xD;
+&#xD;
+		/// &lt;summary&gt;&#xD;
+        /// Gets or sets $PropertyName$ value.&#xD;
+        /// &lt;/summary&gt;&#xD;
+        /// &lt;value&gt;The $PropertyName$.&lt;/value&gt;&#xD;
+        [ConfigurationProperty(ConfigurationNames.$PropertyName$, IsRequired = true, DefaultValue="")]&#xD;
+        public string $PropertyName$&#xD;
+        {&#xD;
+            get&#xD;
+            {&#xD;
+                return GetConfigurationValue&lt;string&gt;(ConfigurationNames.$PropertyName$);&#xD;
+            }&#xD;
+&#xD;
+            set&#xD;
+            {&#xD;
+                SetConfigurationValue(ConfigurationNames.$PropertyName$, value);&#xD;
+            }&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Field/=PropertyName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Field/=PropertyName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FF802B64FF2DFA4799949BAF5C2B636C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Abbreviator/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Adorne/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Adornes/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=asmx/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=AUSL/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Balzor/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Blazor/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=casted/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Comparers/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=criterions/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Dokuman/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=downloader/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=fibu/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Formattable/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Hyparchive/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Initilizes/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Laufental/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Lehrbetrieb/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Lehrbetriebe/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=licence/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=mandant/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=netto/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=osisa/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=paginator/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Refetch/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Requery/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Sageserver/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Saldo/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=SAML/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Setable/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Sharepoint/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Specialised/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Subsite/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Subsites/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UserDictionary/Words/=Youku/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

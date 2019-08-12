@@ -14,5 +14,8 @@ namespace miNationalrot
         public static IWebAssemblyHostBuilder CreateHostBuilder(string[] args) =>
             BlazorWebAssemblyHost.CreateDefaultBuilder()
                 .UseBlazorStartup<Startup>();
+
+
+        //public IWebHostBuilder CreateWebHostBuilder2(string[] args)
     }
 }
