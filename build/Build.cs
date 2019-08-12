@@ -1,15 +1,15 @@
+
+
 using System;
-using System.Linq;
 using Nuke.Common;
 using Nuke.Common.Execution;
 using Nuke.Common.Git;
 using Nuke.Common.ProjectModel;
-using Nuke.Common.Tooling;
 using Nuke.Common.Tools.DotNet;
 using Nuke.Common.Tools.Git;
 using Nuke.Common.Tools.GitVersion;
 using Nuke.Common.Utilities.Collections;
-using static Nuke.Common.EnvironmentInfo;
+
 using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.IO.PathConstruction;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
@@ -75,7 +75,7 @@ class Build : NukeBuild
             DotNetBuild(s => s
                 .SetProjectFile(Solution)
                 .SetConfiguration(Configuration)
-                .SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
+                .SetAssemblyVersion(GetAssemblyVersion())
                 .SetFileVersion(GitVersion.GetNormalizedFileVersion())
                 .SetInformationalVersion(GitVersion.InformationalVersion)
                 .EnableNoRestore());
@@ -90,13 +90,25 @@ class Build : NukeBuild
                 .SetConfiguration("Release")
                 .SetOutput(PublishDirectory)
                 //.SetAssemblyVersion(GitVersion.GetNormalizedAssemblyVersion())
-                .SetAssemblyVersion(GitVersion.FullSemVer.Replace("+","."))
+                //.SetAssemblyVersion(GitVersion.FullSemVer.Replace("+","."))
+                .SetAssemblyVersion(GetAssemblyVersion())
                 .SetFileVersion(GitVersion.GetNormalizedFileVersion())
                 .SetInformationalVersion(GitVersion.InformationalVersion)
                 //.SetNoBuild(true)
             );
         });
 
+
+    public string GetAssemblyVersion()
+    {
+        var main = "0";
+        var stamp = DateTime.Now;
+        var month = (stamp.Year-2000) *100 + stamp.Month;
+        var day = stamp.Day;
+        var rev = GitVersion.BuildMetaData;
+
+        return $"{main}.{month}.{day}.{rev}";
+    }
 
     Target PushGhPages => _ => _
         .DependsOn(Publish)

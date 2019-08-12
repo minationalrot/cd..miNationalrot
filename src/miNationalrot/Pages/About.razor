@@ -2,20 +2,25 @@
 @using System.IO
 @using System.Runtime.CompilerServices
 
+@inject HttpClient Client
+@inject IUriHelper uriHelper
+
 <h1>Wer simer</h1>
 
-Welcome to your new app.
 
 
-<p>Applikations-Version: @version</p>
-<p>Applikations-Datei: @found</p>
-<p>Applikations-Datum: @stamp</p>
+<p>Applikations-Version: @version2</p>
 
 
 
 @code {
 
     string version = typeof(Program).Assembly.FullName;
+    Version version2 = typeof(Program).Assembly.GetName().Version;
+    
+    string location = typeof(Program).Assembly.Location;
+   //string path = uriHelper.GetBaseUri();
+
     bool found = new FileInfo(typeof(Program).Assembly.Location).Exists;
     DateTime stamp = new FileInfo(typeof(Program).Assembly.Location).LastAccessTime;
 }
