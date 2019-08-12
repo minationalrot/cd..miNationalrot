@@ -1,4 +1,5 @@
 name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yy).$(Date:MMdd)$(Rev:.r)
+
 variables:
   - group: GitHubPATGroup
   - name: SolutionFile
@@ -26,6 +27,11 @@ stages:
       name: Default
 
     steps:
+    - task: UseNode@1
+        
+    - powershell: |
+        npm install -g lighthouse
+
     - powershell: |
         $m = dotnet tool list --global | Where {$_.StartsWith("nuke.globaltool")}
         $m.Count
